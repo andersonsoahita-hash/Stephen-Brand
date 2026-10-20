@@ -114,6 +114,8 @@ nav ul a.on{color:var(--gold);opacity:1;border-bottom:1px solid var(--gold);padd
  .vis.typo{aspect-ratio:16/9}
  .cat{padding-top:80px}
 }
+.logos{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.logos img{height:58px;width:auto;background:#fff;border-radius:8px;padding:6px 10px;display:block}
 /* fil rouge */
 .thread{padding:70px 4vw 40px;text-align:center}
 .thread h2{font-family:Fraunces,serif;font-size:clamp(30px,5vw,56px);color:#fff;font-weight:600}
@@ -218,27 +220,27 @@ const ROWS=[
 {id:'resp',cat:'parcours',title:'Responsabilités',sub:'Porter la parole des autres',items:[
  {id:'delegue',tag:'Depuis l’école',title:'Délégué pendant neuf ans',big:'9 ans',c:G('#13315C','#0B2545'),st:'Terminé',
   body:['Pendant neuf ans, Stephen est délégué de classe. Neuf ans à faire le lien entre un groupe et ceux qui l’encadrent, à transmettre ce qui ne va pas comme ce qui va bien, à apprendre qu’une voix portée au nom de tous doit être plus juste que celle qu’on porte pour soi.','La fonction n’a rien de spectaculaire. Elle apprend l’écoute d’abord, puis le sens de l’organisation, une forme de patience. Ce sont, plus tard, des qualités qu’on retrouve dans sa manière de mener des équipes, des projets et des clients.'],facts:[['9','ans de délégation']]},
- {id:'referent',tag:'ISCAM · Madagascar',title:'Élève référent',big:'2 ans',c:G('#3F6E9B','#0B2545'),st:'Terminé',
+ {id:'referent',logos:['iscam'],tag:'ISCAM · Madagascar',title:'Élève référent',big:'2 ans',c:G('#3F6E9B','#0B2545'),st:'Terminé',
   body:['Pendant deux ans, sur deux vagues d’étudiants, Stephen suit une classe d’environ trente-cinq élèves tout au long de l’année.','## Ce qu’il fait','Il les conseille sur les démarches et les astuces de l’école, anime les pauses, organise les tours de repas, joue au besoin le time keeper, forme de petits groupes de discussion, et surtout écoute.','## Les temps forts','Il encadre avec d’autres référents environ trois cents élèves de classes mélangées ; chaque référent y tient un rôle selon son point fort. Il participe aussi à des salons étudiants, dont des salons d’étudiants internationaux.','Ce rôle est distinct de l’association qu’il a cofondée à la même époque.'],facts:[['2','ans'],['35','élèves suivis'],['300','élèves aux temps forts']]},
- {id:'isc1',tag:'Saison 1 · 2022 – 2023',title:'Isc’America : cofonder',big:'2022',c:G('#3F6E9B','#13315C'),st:'Terminé',
+ {id:'isc1',logos:['iscamerica', 'iscam'],tag:'Saison 1 · 2022 – 2023',title:'Isc’America : cofonder',big:'2022',c:G('#3F6E9B','#13315C'),st:'Terminé',
   body:['Isc’America est l’association étudiante de l’ISCAM autour de la culture américaine, de la prise de parole en public et de la pratique de l’anglais. Stephen la cofonde en 2022 avec d’autres étudiants.','## Son rôle','Cofondateur et responsable communication : visuels, animation de la page, activités, premiers partenariats avec des écoles, des clubs d’anglais, des stands et des événements. C’est là qu’il découvre la communication et la création de contenu.','## Les stands','Le 26 octobre 2022, à la journée des associations, le premier stand est décoré de panneaux de villes américaines. Le 19 octobre 2023, le stand passe en intérieur avec une identité visuelle complète, un aigle peint et de la cuisine en direct. Les corn dogs sont l’idée du responsable financier pour alimenter la trésorerie ; l’aigle est une décision du comité, réalisée par des membres.']},
- {id:'isc2',tag:'Saison 2 · 2023 – 2024',title:'Isc’America : présider',big:'2023',c:G('#3F6E9B','#0B2545'),st:'Terminé',
+ {id:'isc2',logos:['iscamerica'],tag:'Saison 2 · 2023 – 2024',title:'Isc’America : présider',big:'2023',c:G('#3F6E9B','#0B2545'),st:'Terminé',
   body:['En 2023, Stephen devient président.','## Thanksgiving · 23 novembre 2023','Environ vingt-cinq membres autour d’un repas partagé. Il ouvre la rencontre par un discours d’accueil sur l’idée centrale de la fête : le partage du moment et des échanges.','## Partage de repas de Noël · 23 décembre','À Ankadifotsy. L’idée du projet est la sienne et il dirige l’organisation : planning, répartition des tâches, suivi avant, pendant et après. Une collecte de fonds a lieu les 20 et 21 décembre (la part à 12 000 Ar, soit environ 2,50 €). Plus de soixante-dix personnes reçoivent un repas.','## Iscamian’s Day · janvier 2024','« Planter des vies ! » : environ quatre-vingts membres, chacun plantant au moins un arbre, et un stand de milkshakes qui récolte des fonds.','## Une soirée annulée','L’American Night Party du 23 février 2024 est préparée jusqu’au bout (autorisations, prestataires, acomptes) puis annulée à la dernière minute par l’établissement.'],facts:[['70+','repas à Noël'],['80','membres, un arbre chacun'],['25','membres à Thanksgiving']]},
- {id:'isc3',tag:'Saison 3 · 2024 – 2025',title:'Isc’America : transmettre',big:'2024',c:G('#13315C','#3F6E9B'),st:'En cours',
+ {id:'isc3',logos:['iscamerica'],tag:'Saison 3 · 2024 – 2025',title:'Isc’America : transmettre',big:'2024',c:G('#13315C','#3F6E9B'),st:'En cours',
   body:['En 2024-2025, Stephen passe la présidence à son successeur et reste son conseiller. En amont des réunions, ils échangent sur les activités prévues pour les six séances suivantes : il donne son avis, ses propositions et la manière dont il avait conçu et planifié les siennes.','Il gère encore aujourd’hui la page Facebook de l’association.']}
 ]},
 {id:'etudes',cat:'parcours',title:'Études & stages',sub:'De l’ISCAM à l’INSEEC',items:[
- {id:'iscam',tag:'Madagascar',title:'Licence en gestion',big:'ISCAM',c:G('#4E6B57','#0B2545'),st:'Terminé',
+ {id:'iscam',logos:['iscam'],tag:'Madagascar',title:'Licence en gestion',big:'ISCAM',c:G('#4E6B57','#0B2545'),st:'Terminé',
   body:['Licence en gestion à l’ISCAM Business School, à Madagascar. C’est aussi là que se trouvent l’association et le rôle d’élève référent.','Le rapport de fin de licence, remis en 2024, s’intitule « Contribution à l’amélioration de la gestion de la clientèle Elite ».']},
  {id:'boa',tag:'Stage',title:'BOA Madagascar',big:'BOA',c:G('#4E6B57','#13315C'),st:'Terminé',
   body:['Stage sur la relation avec la clientèle Elite. Ce stage nourrit le rapport de fin de licence de 2024.','Il pose un décor : celui du client, de l’accueil, de la relation qui se construit dans le temps. On le retrouve plus tard dans les appels de courtoisie chez Tekwin.']},
- {id:'sos',tag:'Stage',title:'Groupe SOS Madagascar',big:'Groupe<br>SOS',small:1,c:G('#4E6B57','#071a33'),st:'Terminé',
+ {id:'sos',logos:['sos'],tag:'Stage',title:'Groupe SOS Madagascar',big:'Groupe<br>SOS',small:1,c:G('#4E6B57','#071a33'),st:'Terminé',
   body:['Stage en gestion commerciale.']},
- {id:'ebs1',tag:'Paris · 2024 – 2025',title:'EBS Paris · master 1',big:'M1',c:G('#13315C','#071a33'),st:'Terminé',
+ {id:'ebs1',logos:['ebs'],tag:'Paris · 2024 – 2025',title:'EBS Paris · master 1',big:'M1',c:G('#13315C','#071a33'),st:'Terminé',
   body:['Master 1 en International Business Management à EBS Paris, après le départ de Madagascar pour Paris. Il y travaille son anglais, qu’il maîtrise au niveau C1.']},
- {id:'ebs2',tag:'Promotion 2026',title:'EBS × Ferrières · master 2',big:'M2',c:G('#13315C','#946F22'),st:'Promotion 2026',
+ {id:'ebs2',logos:['ebs', 'ferrieres'],tag:'Promotion 2026',title:'EBS × Ferrières · master 2',big:'M2',c:G('#13315C','#946F22'),st:'Promotion 2026',
   body:['Master 2 en double diplôme avec Ferrières : International Luxury Marketing & International Hospitality Management, promotion 2026.']},
- {id:'memoire',tag:'Mémoire',title:'Apple et la confiance',big:'48',c:G('#071a33','#3F6E9B'),st:'Soutenu',
+ {id:'memoire',logos:['ebs'],tag:'Mémoire',title:'Apple et la confiance',big:'48',c:G('#071a33','#3F6E9B'),st:'Soutenu',
   body:['Le mémoire de fin d’études porte sur la cohérence que les consommateurs perçoivent entre la promesse technologique d’Apple (photo, vidéo, intelligence artificielle) et l’expérience réelle des iPhone, et sur l’effet de cette cohérence sur la confiance et la fidélité, selon la génération (X, Y ou Z).','Quarante-huit utilisateurs d’iPhone sont interrogés à Madagascar. Il est soutenu devant un jury.','C’est un sujet de marque : ce que l’on promet, ce que l’on tient, et ce que cela fait à la confiance.'],facts:[['48','utilisateurs interrogés'],['3','générations : X, Y, Z']]},
  {id:'inseec',tag:'Depuis sept. 2026',title:'INSEEC · master 1',big:'INSEEC',c:G('#C9A24B','#13315C'),st:'En cours',
   body:['Master 1 en marketing, communication et stratégie de marque. Stephen pivote vers le marketing, le contenu de marque et la communication.']}
@@ -278,7 +280,7 @@ const ROWS=[
   body:['Voix, corps, mémoire, adaptation au public, questions-réponses, situations difficiles, psychologie de la performance, entraînement.'],facts:[['25','chapitres']]},
  {id:'art3',tag:'Tome III · chapitres 41 – 48',title:'L’Art oratoire : négocier, débattre',big:'Tome<br>III',c:G('#071a33','#B5651D'),st:'À écrire',prep:1,
   body:['Négociation, débat et improvisation. Le plan est posé, le tome reste à écrire.'],facts:[['8','chapitres prévus']]},
- {id:'lse',tag:'Manuel trilingue',title:'Let’s Speak English',big:'Let’s<br>Speak<br>English',c:G('#2F8F96','#0B2545'),st:'Manuel',
+ {id:'lse',logos:['speakup'],tag:'Manuel trilingue',title:'Let’s Speak English',big:'Let’s<br>Speak<br>English',c:G('#2F8F96','#0B2545'),st:'Manuel',
   body:['Manuel d’anglais trilingue (anglais, français, malgache), inspiré de la méthode d’un livre malgache, pensé uniquement pour les élèves et destiné à être commercialisé.','## Le cours','Un cours de deux mois, cinq séances par semaine, avec au minimum la moitié du temps en pratique. Un guide de l’enseignant, séparé, contient le déroulement des séances.']},
  {id:'pa',tag:'24 leçons',title:'Programme Anglais',big:'Programme<br>Anglais',small:1,c:G('#3F6E9B','#13315C'),st:'Pour impression',
   body:['Livre de vingt-quatre leçons en français, anglais et malgache, destiné à l’impression.','Son critère : aucune leçon ne ressemble à une autre. Quand la première version s’est révélée trop répétitive, Stephen a tout reconstruit.'],facts:[['24','leçons']]},
@@ -312,9 +314,9 @@ const ROWS=[
   body:['Depuis août 2025, Stephen se fait accompagner régulièrement par un coach en art oratoire, Ny Avo Razafindrazaka.']}
 ]},
 {id:'speak',cat:'voix',title:'Enseigner l’anglais',sub:'Speak Up English Institute et les manuels',items:[
- {id:'speakup',tag:'Centre de formation',title:'Speak Up English Institute',big:'Speak<br>Up',c:G('#2F8F96','#0B2545'),st:'Lancé · octobre 2026',
+ {id:'speakup',logos:['speakup'],tag:'Centre de formation',title:'Speak Up English Institute',big:'Speak<br>Up',c:G('#2F8F96','#0B2545'),st:'Lancé · octobre 2026',
   body:['Un centre de formation en anglais dont Stephen est le community manager. Le centre a démarré à Madagascar avec sa première rentrée en octobre 2026.','## Le format','Groupes de douze personnes au maximum, en présentiel en journée à Antananarivo ou en ligne le soir.','## Les manuels','Les manuels Let’s Speak English et Programme Anglais servent de supports.'],facts:[['12','personnes max par groupe']]},
- {id:'speakcom',tag:'Premiers résultats',title:'La communication de Speak Up',big:'19 000',c:G('#2F8F96','#13315C'),st:'Résultats',
+ {id:'speakcom',logos:['speakup'],tag:'Premiers résultats',title:'La communication de Speak Up',big:'19 000',c:G('#2F8F96','#13315C'),st:'Résultats',
   body:['Premiers résultats de la communication : 19 000 vues, 509 abonnés de plus en vingt-huit jours, 95 % de taux de réponse.'],facts:[['19 000','vues'],['+509','abonnés en 28 jours'],['95 %','taux de réponse']]},
  {id:'365',tag:'Une vidéo par jour',title:'365 jours, 365 idées',big:'365',c:G('#946F22','#071a33'),st:'À partir de janvier',prep:1,
   body:['Une vidéo courte par jour pendant un an, de trente secondes à deux minutes trente, avec une vraie recherche derrière chaque idée.','## Un thème par jour','Lundi : management et développement d’entreprise. Mardi : marketing et communication. Mercredi : ressources humaines. Jeudi : commerce international. Vendredi : comptabilité et finance. Week-end : culture générale.','Il le prépare plusieurs semaines à l’avance, pendant les week-ends, en consacrant une demi-journée ou une journée à préparer au moins la semaine.']}
@@ -392,7 +394,7 @@ ROWS.forEach(r=>{
   r.items.forEach(it=>{
     n++;
     const a=document.createElement('article');a.className='art'+(n%2?'':' alt');a.id='a-'+it.id;
-    a.innerHTML=`${visual(it)}<div class="txt2"><div class="kick">${it.tag}</div><h4 class="t">${it.title}</h4><span class="badge${it.prep?' prep':''}">${it.st}</span>${body(it)}</div>`;
+    a.innerHTML=`${visual(it)}<div class="txt2">${(it.logos||[]).length?`<div class="logos">${it.logos.map(l=>`<img src="img/logo_${l}.png" alt="logo ${l}">`).join('')}</div>`:''}<div class="kick">${it.tag}</div><h4 class="t">${it.title}</h4><span class="badge${it.prep?' prep':''}">${it.st}</span>${body(it)}</div>`;
     sec.appendChild(a);
   });
   main.appendChild(sec);
