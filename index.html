@@ -199,6 +199,15 @@ nav ul a.on{border-bottom:0;padding-bottom:0}
 .chap:hover .go{transform:translateX(6px)}
 @media(max-width:900px){.chaps{grid-template-columns:1fr 1fr}.chap,.chap:nth-child(1),.chap:nth-child(2){grid-column:span 1;min-height:260px}}
 @media(max-width:560px){.chaps{grid-template-columns:1fr}.chap,.chap:nth-child(1),.chap:nth-child(2){min-height:230px}}
+/* bandeau Tekwin */
+.tkband{max-width:1240px;margin:50px auto 0;padding:0 4vw}
+.tkband a{display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:clamp(20px,4vw,50px);align-items:center;padding:20px;border-radius:16px;text-decoration:none;color:#fff;background:linear-gradient(120deg,var(--navy2),var(--navy));border:1px solid rgba(201,162,75,.3);transition:.3s}
+.tkband a:hover{border-color:var(--gold);transform:translateY(-4px)}
+.tkband img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 25%;border-radius:12px}
+.tkband h3{font-family:Fraunces,serif;font-weight:600;font-size:clamp(26px,4vw,44px);line-height:1.05;margin:8px 0}
+.tkband p{color:#d9dfeb;max-width:50ch}
+.tkband .go{display:inline-block;margin-top:14px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+@media(max-width:700px){.tkband a{grid-template-columns:1fr}}
 /* page chapitre */
 .chead{position:relative;padding:150px 5vw 56px;overflow:hidden;isolation:isolate}
 .chead img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;opacity:.5;object-position:50% 25%}
@@ -259,7 +268,7 @@ nav ul a.on{border-bottom:0;padding-bottom:0}
 </head>
 <body>
 <nav id="nav"><div id="bar"></div><a class="brand" href="#/">Stephen Anderson Soahita</a>
-<ul><li><a href="#/c/moi">Qui je suis</a></li><li><a href="#/c/parcours">Parcours</a></li><li><a href="#/c/creations">Créations</a></li><li><a href="#/c/voix">Voix</a></li><li><a href="#/c/group">Stephen Group</a></li><li><a href="#/c/suite">Aujourd’hui</a></li></ul></nav>
+<ul><li><a href="#/c/moi">Qui je suis</a></li><li><a href="#/c/parcours">Parcours</a></li><li><a href="#/c/parcours/tk1">Tekwin</a></li><li><a href="#/c/creations">Créations</a></li><li><a href="#/c/voix">Voix</a></li><li><a href="#/c/group">Stephen Group</a></li><li><a href="#/c/suite">Aujourd’hui</a></li></ul></nav>
 
 <div id="app"></div>
 <template id="t-hero"><header class="hero" id="top">
@@ -317,8 +326,8 @@ const ROWS=[
 {id:'resp',cat:'parcours',title:'Responsabilités',sub:'Porter la parole des autres',items:[
  {id:'delegue',bg:'delegue.jpg',pos:'50% 40%',tag:'Depuis l’école',title:'Délégué pendant neuf ans',big:'9 ans',c:G('#13315C','#0B2545'),st:'Terminé',
   body:['Pendant neuf ans, Stephen est délégué de classe. Neuf ans à faire le lien entre un groupe et ceux qui l’encadrent, à transmettre ce qui ne va pas comme ce qui va bien, à apprendre qu’une voix portée au nom de tous doit être plus juste que celle qu’on porte pour soi.','La fonction n’a rien de spectaculaire. Elle apprend l’écoute d’abord, puis le sens de l’organisation, une forme de patience. Ce sont, plus tard, des qualités qu’on retrouve dans sa manière de mener des équipes, des projets et des clients.'],facts:[['9','ans de délégation']]},
- {id:'referent',bg:'ref_attest.jpg',pos:'50% 30%',gallery:['ref_foret.jpg', 'ref_nuit.jpg', 'ref_equipe.jpg', 'iscam_stand.jpg'],logos:['iscam'],tag:'ISCAM · Madagascar',title:'Élève référent',big:'2 ans',c:G('#3F6E9B','#0B2545'),st:'Terminé',
-  body:['Pendant deux ans, sur deux vagues d’étudiants, Stephen suit une classe d’environ trente-cinq élèves tout au long de l’année.','## Ce qu’il fait','Il les conseille sur les démarches et les astuces de l’école, anime les pauses, organise les tours de repas, joue au besoin le time keeper, forme de petits groupes de discussion, et surtout écoute.','## Les temps forts','Il encadre avec d’autres référents environ trois cents élèves de classes mélangées ; chaque référent y tient un rôle selon son point fort. Il participe aussi à des salons étudiants, dont des salons d’étudiants internationaux.','Ce rôle est distinct de l’association qu’il a cofondée à la même époque.'],facts:[['2','ans'],['35','élèves suivis'],['300','élèves aux temps forts']]},
+ {id:'referent',bg:'ref_attest.jpg',pos:'50% 30%',gallery:['ref_foret.jpg', 'ref_nuit.jpg', 'ref_equipe.jpg', 'iscam_stand.jpg'],logos:['iscam'],tag:'ISCAM · 2022 – 2024',title:'Élève référent',big:'2 ans',c:G('#3F6E9B','#0B2545'),st:'Terminé',
+  body:['Pendant deux ans, en 2022-2023 et en 2023-2024, sur deux vagues d’étudiants, Stephen suit une classe d’environ trente-cinq élèves tout au long de l’année.','## Ce qu’il fait','Il les conseille sur les démarches et les astuces de l’école, anime les pauses, organise les tours de repas, joue au besoin le time keeper, forme de petits groupes de discussion, et surtout écoute.','## Les temps forts','Il encadre avec d’autres référents environ trois cents élèves de classes mélangées ; chaque référent y tient un rôle selon son point fort. Il participe aussi à des salons étudiants, dont des salons d’étudiants internationaux.','Ce rôle est distinct de l’association qu’il a cofondée à la même époque.'],facts:[['2','ans'],['35','élèves suivis'],['300','élèves aux temps forts']]},
  {id:'isc1',bg:'isc_s1.jpg',pos:'50% 50%',logos:['iscamerica', 'iscam'],tag:'Saison 1 · 2022 – 2023',title:'Isc’America : cofonder',big:'2022',c:G('#3F6E9B','#13315C'),st:'Terminé',
   body:['Isc’America est l’association étudiante de l’ISCAM autour de la culture américaine, de la prise de parole en public et de la pratique de l’anglais. Stephen la cofonde en 2022 avec d’autres étudiants.','## Son rôle','Cofondateur et responsable communication : visuels, animation de la page, activités, premiers partenariats avec des écoles, des clubs d’anglais, des stands et des événements. C’est là qu’il découvre la communication et la création de contenu.','## Les stands','Le 26 octobre 2022, à la journée des associations, le premier stand est décoré de panneaux de villes américaines. Le 19 octobre 2023, le stand passe en intérieur avec une identité visuelle complète, un aigle peint et de la cuisine en direct. Les corn dogs sont l’idée du responsable financier pour alimenter la trésorerie ; l’aigle est une décision du comité, réalisée par des membres.']},
  {id:'isc2',bg:'isc_s2.jpg',pos:'50% 45%',gallery:['isc_s2b.jpg', 'isc_plant.jpg', 'isc_stand.jpg', 'noel_selfie.jpg', 'noel_meals.jpg'],logos:['iscamerica'],tag:'Saison 2 · 2023 – 2024',title:'Isc’America : présider',big:'2023',c:G('#3F6E9B','#0B2545'),st:'Terminé',
@@ -494,6 +503,7 @@ function home(){
     return `<a class="chap rv" style="--d:${i*.08}s" href="#/c/${c}"><img src="img/${cv[0]}" style="object-position:${cv[1]}" alt=""><div class="in"><div class="num">${d.k}</div><h3>${d.t}</h3><p>${d.d}</p><span class="go">Entrer →</span></div></a>`}).join('');
   app.innerHTML=`<div class="page">${tpl('hero').replace('</header>','<div class="scrollhint">Découvrir</div></header>').replace('href="#cat-moi"','href="#/c/moi"').replace('href="#cat-parcours"','href="#/c/parcours"')}
   <section class="homechap"><div class="kick rv">Six chapitres</div><h2 class="rv">Choisis ta porte d’entrée</h2><div class="chaps">${chaps}</div></section>
+  <section class="tkband rv"><a href="#/c/parcours/tk1"><img src="img/tk_gilet.jpg" alt=""><div><div class="kick">Alternance · juillet 2025 – septembre 2026</div><h3>Mon alternance chez Tekwin</h3><p>Assistant chef de projet IT : Odoo, appels de courtoisie, passation, LinkedIn.</p><span class="go">Découvrir →</span></div></a></section>
   ${tpl('thread')}${tpl('foot')}</div>`;
 }
 function chapter(c){
