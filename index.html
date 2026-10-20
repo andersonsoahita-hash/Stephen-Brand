@@ -199,6 +199,7 @@ nav ul a.on{border-bottom:0;padding-bottom:0}
 .chap:hover .go{transform:translateX(6px)}
 @media(max-width:900px){.chaps{grid-template-columns:1fr 1fr}.chap,.chap:nth-child(1),.chap:nth-child(2){grid-column:span 1;min-height:260px}}
 @media(max-width:560px){.chaps{grid-template-columns:1fr}.chap,.chap:nth-child(1),.chap:nth-child(2){min-height:230px}}
+.tri div img{display:block;width:calc(100% + 44px);margin:-22px -22px 18px;height:190px;object-fit:cover;border-radius:7px 7px 0 0}
 /* bandeau Tekwin */
 .tkband{max-width:1240px;margin:50px auto 0;padding:0 4vw}
 .tkband a{display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:clamp(20px,4vw,50px);align-items:center;padding:20px;border-radius:16px;text-decoration:none;color:#fff;background:linear-gradient(120deg,var(--navy2),var(--navy));border:1px solid rgba(201,162,75,.3);transition:.3s}
@@ -285,9 +286,9 @@ nav ul a.on{border-bottom:0;padding-bottom:0}
 <div class="kick">Fil rouge</div>
 <h2 class="serif">Générosité, entraide, <em>élévation.</em></h2>
 <div class="tri">
-<div><b>Générosité</b><p>Plus de 70 repas partagés à Noël avec Isc’America. L’identité du baume de sa mère, créée à distance. Du temps donné sans compter quand un projet lui plaît.</p></div>
-<div><b>Entraide</b><p>Élève référent pendant deux ans. Conseiller de son successeur à la tête de l’association. Un guide et une fiche de poste pour celui qui le remplace chez Tekwin.</p></div>
-<div><b>Élévation</b><p>Apprendre en continu : master, coaching d’art oratoire, livres. Écrire des manuels pour que d’autres progressent. Former « les leaders de demain à domicile ».</p></div>
+<div><img src="img/noel_meals.jpg" alt=""><b>Générosité</b><p>Plus de 70 repas partagés à Noël avec Isc’America. L’identité du baume de sa mère, créée à distance. Du temps donné sans compter quand un projet lui plaît.</p></div>
+<div><img src="img/ref_equipe.jpg" alt="" style="object-position:50% 30%"><b>Entraide</b><p>Élève référent pendant deux ans. Conseiller de son successeur à la tête de l’association. Un guide et une fiche de poste pour celui qui le remplace chez Tekwin.</p></div>
+<div><img src="img/coach.jpg" alt="" style="object-position:50% 30%"><b>Élévation</b><p>Apprendre en continu : master, coaching d’art oratoire, livres. Écrire des manuels pour que d’autres progressent. Former « les leaders de demain à domicile ».</p></div>
 </div>
 <p class="quote">Grandir, ce n’est pas plaire en devenant un autre. C’est être utile en <b>restant soi.</b></p>
 </section></template>
@@ -320,7 +321,7 @@ const ROWS=[
   body:['Stephen Anderson Soahita a vingt-trois ans. Il est malgache, né un 29 juin, et vit à Ferrières-en-Brie, en Île-de-France, après avoir quitté Madagascar pour poursuivre ses études à Paris.','Créatif et attentif aux détails, Stephen met l’humain au centre de ce qu’il fait. Il ne reste jamais longtemps sans rien faire : il cherche toujours à évoluer. Quand un projet lui plaît, il s’y investit sans compter son énergie. Et il grandit avec les autres : il observe leurs méthodes, apprend d’eux, les adapte pour améliorer les siennes.','## En bref','Formation : INSEEC, master 1 en marketing, communication et stratégie de marque ; EBS Paris × Ferrières, master 2 (promotion 2026) ; licence en gestion à l’ISCAM.','Langue : anglais niveau C1.','Il pivote vers le marketing, le contenu de marque et la communication.'],facts:[['23','ans'],['C1','anglais'],['3','mots : générosité, entraide, élévation']]},
  {id:'repere',bg:'portrait_pro.jpg',pos:'50% 20%',tag:'Chronologie',title:'Dix dates',big:'10<br>dates',c:G('#13315C','#071a33'),st:'Repères',
   body:['Les dates sont celles données par Stephen ; une année seule indique que le mois n’est pas précisé.'],list:['2022 : cofonde Isc’America à l’ISCAM','2023 – 2024 : président de l’association (Thanksgiving, Noël, Iscamian’s Day)','2024 : licence en gestion, stages BOA et Groupe SOS','2024 – 2025 : Paris, EBS (master 1, puis master 2)','Juillet 2025 : alternance chez Tekwin','Août 2025 : début du coaching en art oratoire','Janvier 2026 : début des appels de courtoisie (25 appels, 21 clients)','2026 : livre photo « Man in the Shadow »','Septembre 2026 : INSEEC, master 1','Octobre 2026 : première rentrée de Speak Up English Institute']},
- {id:'fil',bg:'q07.jpg',pos:'50% 35%',tag:'Valeurs',title:'Générosité, entraide, élévation',big:'3<br>mots',c:G('#946F22','#0B2545'),st:'Fil rouge',
+ {id:'fil',bg:'noel_selfie.jpg',pos:'50% 40%',tag:'Valeurs',title:'Générosité, entraide, élévation',big:'3<br>mots',c:G('#946F22','#0B2545'),st:'Fil rouge',
   body:['Trois mots reviennent dans tout ce qu’il entreprend.','## Générosité','Plus de 70 repas partagés à Noël avec Isc’America. L’identité du baume de sa mère, créée à distance. Du temps donné sans compter quand un projet lui plaît.','## Entraide','Élève référent pendant deux ans. Conseiller de son successeur à la tête de l’association. Un guide et une fiche de poste pour celui qui le remplace chez Tekwin.','## Élévation','Apprendre en continu : master, coaching d’art oratoire, livres. Écrire des manuels pour que d’autres progressent. Former « les leaders de demain à domicile ».','« Grandir, ce n’est pas plaire en devenant un autre. C’est être utile en restant soi. »']}
 ]},
 {id:'resp',cat:'parcours',title:'Responsabilités',sub:'Porter la parole des autres',items:[
