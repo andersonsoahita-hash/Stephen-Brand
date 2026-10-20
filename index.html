@@ -89,6 +89,8 @@ nav ul a.on{color:var(--gold);opacity:1;border-bottom:1px solid var(--gold);padd
 .vis.typo{aspect-ratio:3/4;padding:26px;display:flex;flex-direction:column;justify-content:space-between}
 .vis.typo .big{font-family:Fraunces,serif;font-weight:600;font-size:clamp(54px,7vw,86px);line-height:.95;color:#fff;letter-spacing:-.02em}
 .vis.typo .big.s{font-size:clamp(36px,4.4vw,56px)}
+.vis.typo.bgp .big{text-shadow:0 2px 18px rgba(0,0,0,.55)}
+.vis.typo.bgp figcaption{text-shadow:0 1px 8px rgba(0,0,0,.7)}
 .vis.typo figcaption{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.75);font-weight:600}
 .vis.phone{border-radius:28px;border:5px solid #050f20;max-width:300px}
 .vis.phone.wide{border-radius:10px;max-width:none}
@@ -112,15 +114,8 @@ nav ul a.on{color:var(--gold);opacity:1;border-bottom:1px solid var(--gold);padd
  .art .vis{position:static;max-width:420px}
  .vis.phone{max-width:260px}
  .vis.typo{aspect-ratio:16/9}
- .vis.typo.hasl{aspect-ratio:auto;min-height:0}
- .cat{padding-top:80px}
+  .cat{padding-top:80px}
 }
-.lgbox{flex:1;display:flex;flex-direction:column;justify-content:center;gap:14px;margin:14px 0}
-.lgt{background:#fff;border-radius:12px;padding:20px 22px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px -8px rgba(0,0,0,.5)}
-.lgt.dk{background:#1E2E40}
-.lgt img{width:100%;max-height:120px;object-fit:contain;display:block}
-.vis.typo.hasl{aspect-ratio:auto;min-height:440px}
-.vis.typo.hasl .big{font-size:clamp(34px,4.2vw,52px)}
 .logos{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
 .logos img.dk{background:#1E2E40}
 .logos img{height:58px;width:auto;background:#fff;border-radius:8px;padding:6px 10px;display:block}
@@ -226,41 +221,41 @@ const ROWS=[
   body:['Trois mots reviennent dans tout ce qu’il entreprend.','## Générosité','Plus de 70 repas partagés à Noël avec Isc’America. L’identité du baume de sa mère, créée à distance. Du temps donné sans compter quand un projet lui plaît.','## Entraide','Élève référent pendant deux ans. Conseiller de son successeur à la tête de l’association. Un guide et une fiche de poste pour celui qui le remplace chez Tekwin.','## Élévation','Apprendre en continu : master, coaching d’art oratoire, livres. Écrire des manuels pour que d’autres progressent. Former « les leaders de demain à domicile ».','« Grandir, ce n’est pas plaire en devenant un autre. C’est être utile en restant soi. »']}
 ]},
 {id:'resp',cat:'parcours',title:'Responsabilités',sub:'Porter la parole des autres',items:[
- {id:'delegue',tag:'Depuis l’école',title:'Délégué pendant neuf ans',big:'9 ans',c:G('#13315C','#0B2545'),st:'Terminé',
+ {id:'delegue',bg:'portrait.jpg',pos:'50% 28%',tag:'Depuis l’école',title:'Délégué pendant neuf ans',big:'9 ans',c:G('#13315C','#0B2545'),st:'Terminé',
   body:['Pendant neuf ans, Stephen est délégué de classe. Neuf ans à faire le lien entre un groupe et ceux qui l’encadrent, à transmettre ce qui ne va pas comme ce qui va bien, à apprendre qu’une voix portée au nom de tous doit être plus juste que celle qu’on porte pour soi.','La fonction n’a rien de spectaculaire. Elle apprend l’écoute d’abord, puis le sens de l’organisation, une forme de patience. Ce sont, plus tard, des qualités qu’on retrouve dans sa manière de mener des équipes, des projets et des clients.'],facts:[['9','ans de délégation']]},
- {id:'referent',logos:['iscam'],tag:'ISCAM · Madagascar',title:'Élève référent',big:'2 ans',c:G('#3F6E9B','#0B2545'),st:'Terminé',
+ {id:'referent',bg:'avatar.jpg',pos:'50% 22%',logos:['iscam'],tag:'ISCAM · Madagascar',title:'Élève référent',big:'2 ans',c:G('#3F6E9B','#0B2545'),st:'Terminé',
   body:['Pendant deux ans, sur deux vagues d’étudiants, Stephen suit une classe d’environ trente-cinq élèves tout au long de l’année.','## Ce qu’il fait','Il les conseille sur les démarches et les astuces de l’école, anime les pauses, organise les tours de repas, joue au besoin le time keeper, forme de petits groupes de discussion, et surtout écoute.','## Les temps forts','Il encadre avec d’autres référents environ trois cents élèves de classes mélangées ; chaque référent y tient un rôle selon son point fort. Il participe aussi à des salons étudiants, dont des salons d’étudiants internationaux.','Ce rôle est distinct de l’association qu’il a cofondée à la même époque.'],facts:[['2','ans'],['35','élèves suivis'],['300','élèves aux temps forts']]},
- {id:'isc1',logos:['iscamerica', 'iscam'],tag:'Saison 1 · 2022 – 2023',title:'Isc’America : cofonder',big:'2022',c:G('#3F6E9B','#13315C'),st:'Terminé',
+ {id:'isc1',bg:'isc_plant.jpg',pos:'50% 55%',logos:['iscamerica', 'iscam'],tag:'Saison 1 · 2022 – 2023',title:'Isc’America : cofonder',big:'2022',c:G('#3F6E9B','#13315C'),st:'Terminé',
   body:['Isc’America est l’association étudiante de l’ISCAM autour de la culture américaine, de la prise de parole en public et de la pratique de l’anglais. Stephen la cofonde en 2022 avec d’autres étudiants.','## Son rôle','Cofondateur et responsable communication : visuels, animation de la page, activités, premiers partenariats avec des écoles, des clubs d’anglais, des stands et des événements. C’est là qu’il découvre la communication et la création de contenu.','## Les stands','Le 26 octobre 2022, à la journée des associations, le premier stand est décoré de panneaux de villes américaines. Le 19 octobre 2023, le stand passe en intérieur avec une identité visuelle complète, un aigle peint et de la cuisine en direct. Les corn dogs sont l’idée du responsable financier pour alimenter la trésorerie ; l’aigle est une décision du comité, réalisée par des membres.']},
- {id:'isc2',logos:['iscamerica'],tag:'Saison 2 · 2023 – 2024',title:'Isc’America : présider',big:'2023',c:G('#3F6E9B','#0B2545'),st:'Terminé',
+ {id:'isc2',bg:'noel_selfie.jpg',pos:'50% 75%',logos:['iscamerica'],tag:'Saison 2 · 2023 – 2024',title:'Isc’America : présider',big:'2023',c:G('#3F6E9B','#0B2545'),st:'Terminé',
   body:['En 2023, Stephen devient président.','## Thanksgiving · 23 novembre 2023','Environ vingt-cinq membres autour d’un repas partagé. Il ouvre la rencontre par un discours d’accueil sur l’idée centrale de la fête : le partage du moment et des échanges.','## Partage de repas de Noël · 23 décembre','À Ankadifotsy. L’idée du projet est la sienne et il dirige l’organisation : planning, répartition des tâches, suivi avant, pendant et après. Une collecte de fonds a lieu les 20 et 21 décembre (la part à 12 000 Ar, soit environ 2,50 €). Plus de soixante-dix personnes reçoivent un repas.','## Iscamian’s Day · janvier 2024','« Planter des vies ! » : environ quatre-vingts membres, chacun plantant au moins un arbre, et un stand de milkshakes qui récolte des fonds.','## Une soirée annulée','L’American Night Party du 23 février 2024 est préparée jusqu’au bout (autorisations, prestataires, acomptes) puis annulée à la dernière minute par l’établissement.'],facts:[['70+','repas à Noël'],['80','membres, un arbre chacun'],['25','membres à Thanksgiving']]},
- {id:'isc3',logos:['iscamerica'],tag:'Saison 3 · 2024 – 2025',title:'Isc’America : transmettre',big:'2024',c:G('#13315C','#3F6E9B'),st:'En cours',
+ {id:'isc3',bg:'portrait.jpg',pos:'50% 30%',logos:['iscamerica'],tag:'Saison 3 · 2024 – 2025',title:'Isc’America : transmettre',big:'2024',c:G('#13315C','#3F6E9B'),st:'En cours',
   body:['En 2024-2025, Stephen passe la présidence à son successeur et reste son conseiller. En amont des réunions, ils échangent sur les activités prévues pour les six séances suivantes : il donne son avis, ses propositions et la manière dont il avait conçu et planifié les siennes.','Il gère encore aujourd’hui la page Facebook de l’association.']}
 ]},
 {id:'etudes',cat:'parcours',title:'Études & stages',sub:'De l’ISCAM à l’INSEEC',items:[
- {id:'iscam',logos:['iscam'],tag:'Madagascar',title:'Licence en gestion',big:'ISCAM',c:G('#4E6B57','#0B2545'),st:'Terminé',
+ {id:'iscam',bg:'avatar.jpg',pos:'50% 22%',logos:['iscam'],tag:'Madagascar',title:'Licence en gestion',big:'ISCAM',c:G('#4E6B57','#0B2545'),st:'Terminé',
   body:['Licence en gestion à l’ISCAM Business School, à Madagascar. C’est aussi là que se trouvent l’association et le rôle d’élève référent.','Le rapport de fin de licence, remis en 2024, s’intitule « Contribution à l’amélioration de la gestion de la clientèle Elite ».']},
- {id:'boa',logos:['boa'],tag:'Stage',title:'BOA Madagascar',big:'BOA',c:G('#4E6B57','#13315C'),st:'Terminé',
+ {id:'boa',bg:'portrait.jpg',pos:'50% 28%',logos:['boa'],tag:'Stage',title:'BOA Madagascar',big:'BOA',c:G('#4E6B57','#13315C'),st:'Terminé',
   body:['Stage sur la relation avec la clientèle Elite. Ce stage nourrit le rapport de fin de licence de 2024.','Il pose un décor : celui du client, de l’accueil, de la relation qui se construit dans le temps. On le retrouve plus tard dans les appels de courtoisie chez Tekwin.']},
- {id:'sos',logos:['sos'],tag:'Stage',title:'Groupe SOS Madagascar',big:'Groupe<br>SOS',small:1,c:G('#4E6B57','#071a33'),st:'Terminé',
+ {id:'sos',bg:'avatar.jpg',pos:'50% 22%',logos:['sos'],tag:'Stage',title:'Groupe SOS Madagascar',big:'Groupe<br>SOS',small:1,c:G('#4E6B57','#071a33'),st:'Terminé',
   body:['Stage en gestion commerciale.']},
- {id:'ebs1',logos:['ebs'],tag:'Paris · 2024 – 2025',title:'EBS Paris · master 1',big:'M1',c:G('#13315C','#071a33'),st:'Terminé',
+ {id:'ebs1',bg:'portrait2.jpg',pos:'50% 35%',logos:['ebs'],tag:'Paris · 2024 – 2025',title:'EBS Paris · master 1',big:'M1',c:G('#13315C','#071a33'),st:'Terminé',
   body:['Master 1 en International Business Management à EBS Paris, après le départ de Madagascar pour Paris. Il y travaille son anglais, qu’il maîtrise au niveau C1.']},
- {id:'ebs2',logos:['ebs', 'ferrieres'],tag:'Promotion 2026',title:'EBS × Ferrières · master 2',big:'M2',c:G('#13315C','#946F22'),st:'Promotion 2026',
+ {id:'ebs2',bg:'portrait_stephen.jpg',pos:'50% 35%',logos:['ebs', 'ferrieres'],tag:'Promotion 2026',title:'EBS × Ferrières · master 2',big:'M2',c:G('#13315C','#946F22'),st:'Promotion 2026',
   body:['Master 2 en double diplôme avec Ferrières : International Luxury Marketing & International Hospitality Management, promotion 2026.']},
- {id:'memoire',logos:['ebs'],tag:'Mémoire',title:'Apple et la confiance',big:'48',c:G('#071a33','#3F6E9B'),st:'Soutenu',
+ {id:'memoire',bg:'portrait_pro.jpg',pos:'50% 18%',logos:['ebs'],tag:'Mémoire',title:'Apple et la confiance',big:'48',c:G('#071a33','#3F6E9B'),st:'Soutenu',
   body:['Le mémoire de fin d’études porte sur la cohérence que les consommateurs perçoivent entre la promesse technologique d’Apple (photo, vidéo, intelligence artificielle) et l’expérience réelle des iPhone, et sur l’effet de cette cohérence sur la confiance et la fidélité, selon la génération (X, Y ou Z).','Quarante-huit utilisateurs d’iPhone sont interrogés à Madagascar. Il est soutenu devant un jury.','C’est un sujet de marque : ce que l’on promet, ce que l’on tient, et ce que cela fait à la confiance.'],facts:[['48','utilisateurs interrogés'],['3','générations : X, Y, Z']]},
- {id:'inseec',logos:['inseec'],tag:'Depuis sept. 2026',title:'INSEEC · master 1',big:'INSEEC',c:G('#C9A24B','#13315C'),st:'En cours',
+ {id:'inseec',bg:'portrait_pro2.jpg',pos:'50% 15%',logos:['inseec'],tag:'Depuis sept. 2026',title:'INSEEC · master 1',big:'INSEEC',c:G('#C9A24B','#13315C'),st:'En cours',
   body:['Master 1 en marketing, communication et stratégie de marque. Stephen pivote vers le marketing, le contenu de marque et la communication.']}
 ]},
 {id:'tekwin',cat:'parcours',title:'Tekwin · alternance',sub:'Assistant chef de projet IT · juillet 2025 – septembre 2026',items:[
- {id:'tk1',logos:['tekwin','accelis'],tag:'Le poste',title:'Assistant chef de projet IT',big:'Tek<br>win',c:G('#946F22','#0B2545'),st:'Terminé',
+ {id:'tk1',bg:'portrait_pro.jpg',pos:'50% 18%',logos:['tekwin','accelis'],tag:'Le poste',title:'Assistant chef de projet IT',big:'Tek<br>win',c:G('#946F22','#0B2545'),st:'Terminé',
   body:['Tekwin est un prestataire de services informatiques et de cybersécurité installé à Ferrières-en-Brie, dans la H-Tech Valley, qui fait partie du groupe Accelis. Stephen y est assistant chef de projet IT, en alternance, de juillet 2025 à septembre 2026.','Au début, son trajet dure deux heures trente ; à partir de janvier, il vit à dix minutes à pied.']},
- {id:'tk2',logos:['tekwin'],tag:'Premier défi',title:'Odoo, à partir de zéro',big:'300',c:G('#946F22','#13315C'),st:'Terminé',
+ {id:'tk2',bg:'portrait2.jpg',pos:'50% 35%',logos:['tekwin'],tag:'Premier défi',title:'Odoo, à partir de zéro',big:'300',c:G('#946F22','#13315C'),st:'Terminé',
   body:['Odoo vient d’être mis en place à son arrivée. Stephen devient le premier de la société à l’utiliser, sans véritable formation, en partant d’un outil vide. Il lui faut environ trois mois pour comprendre à la fois le poste et l’outil.','## La migration','Il migre environ trois cents produits depuis l’ancien logiciel, SuperOps : produits configurés selon les consignes de sa responsable, clients créés, données croisées pour les factures, abonnements créés, documentation rédigée, configuration testée.'],facts:[['300','produits migrés'],['3 mois','pour maîtriser']]},
- {id:'tk3',logos:['tekwin'],tag:'Depuis janvier 2026',title:'Appels de courtoisie',big:'25<br>21<br>13',c:G('#2F8F96','#0B2545'),st:'En place',
+ {id:'tk3',bg:'portrait_pro2.jpg',pos:'50% 15%',logos:['tekwin'],tag:'Depuis janvier 2026',title:'Appels de courtoisie',big:'25<br>21<br>13',c:G('#2F8F96','#0B2545'),st:'En place',
   body:['Un bilan par client et par trimestre.','## La méthode','Le mail part un mois et demi avant, avec des créneaux modifiables. Une fois le créneau accepté, il prépare l’appel en relisant les contrats et les services du client. Sans réponse, il relance par téléphone vingt-quatre heures après le mail, puis renvoie un message. Environ six clients sur dix ne répondent pas tout de suite.','## Le résultat','Vingt-cinq appels réalisés, vingt et un clients qui acceptent l’échange, treize qui prennent de nouveaux services après le deuxième bilan. Il en retire une meilleure compréhension des besoins réels et des blocages, plus de transparence, donc plus d’ouverture à d’autres services ou à tout centraliser chez Tekwin.'],facts:[['25','appels'],['21','acceptent'],['13','nouveaux services']]},
- {id:'tk4',logos:['tekwin'],tag:'Pour la suite',title:'Écrire pour celui qui vient après',big:'15',c:G('#13315C','#946F22'),st:'Livré',
+ {id:'tk4',bg:'portrait_stephen.jpg',pos:'50% 35%',logos:['tekwin'],tag:'Pour la suite',title:'Écrire pour celui qui vient après',big:'15',c:G('#13315C','#946F22'),st:'Livré',
   body:['Stephen écrit pour que d’autres puissent reprendre.','## Guide de procédures','Quinze sections : la routine, les appels avec scripts, les factures, Odoo, les appels de courtoisie et le suivi du chiffre d’affaires. Mis en forme avec Claude.','## Rapports et recrutement','Des rapports hebdomadaires depuis juillet 2025. Une offre d’emploi et une fiche de poste pour la personne qui lui succédera, acceptées par Tekwin.'],facts:[['15','sections du guide'],['1','fiche de poste']]},
  {id:'tk5',logos:['tekwin'],tag:'Communication',title:'LinkedIn & Deep Tech Talk',img:'rooftops.jpg',st:'Vidéo publiée',
   body:['Stephen prépare une stratégie éditoriale LinkedIn et des séries de posts à partir de la veille cyber mensuelle. Ils n’ont pas été diffusés par l’entreprise : il était chef de projet, pas community manager.','Il filme et monte la vidéo du Deep Tech Talk de l’École 89 Deep Tech, « Cybersécurité : d’une nécessité à une opportunité business », publiée sur LinkedIn. Tourné avec un iPhone et un stabilisateur DJI.'],links:[['Voir la vidéo','https://www.linkedin.com/posts/stephen-anderson-soahita-715a2b321_cybersaezcuritaez-deeptech-intelligenceartificielle-activity-7477662335428632576-yuJU']]}
@@ -314,15 +309,15 @@ const ROWS=[
   body:['Une friperie à Antananarivo, pensée pour les femmes de la classe moyenne, gérée à distance : à Stephen le montage, le design et la stratégie ; à une personne de confiance sur place la logistique et le tournage.']}
 ]},
 {id:'voix',cat:'voix',title:'Slam, guitare & coaching',sub:'Une voix à soi',items:[
- {id:'slam',tag:'Écriture',title:'Slam',big:'Slam',c:G('#B5651D','#13315C'),st:'En pratique',
+ {id:'slam',bg:'avatar.jpg',pos:'50% 22%',tag:'Écriture',title:'Slam',big:'Slam',c:G('#B5651D','#13315C'),st:'En pratique',
   body:['La prise de parole traverse tout le reste : les discours d’accueil de l’association, la présidence, ses propres textes.','Stephen écrit du slam, fortement influencé par Pierre Faury : éloquence, figures de style, jeux de mots, vérité brute mais poétique, rimes internes, pauses orales, fins marquantes mais humaines.','Une présence en ligne autour de cette voix : Facebook, Instagram et TikTok, centrées sur la prise de parole, le slam, la poésie et le récit.']},
  {id:'guitare',tag:'Musique',title:'Guitare',big:'Guitare',c:G('#946F22','#0B2545'),st:'En pratique',
   body:['Il joue de la guitare et a écrit une chanson dans l’esprit d’Ed Sheeran et de Vianney, avec un pont slam parlé.']},
- {id:'coach',tag:'Depuis août 2025',title:'Coaching d’art oratoire',big:'Coach',c:G('#B5651D','#071a33'),st:'En cours',
+ {id:'coach',bg:'portrait.jpg',pos:'50% 28%',tag:'Depuis août 2025',title:'Coaching d’art oratoire',big:'Coach',c:G('#B5651D','#071a33'),st:'En cours',
   body:['Depuis août 2025, Stephen se fait accompagner régulièrement par un coach en art oratoire, Ny Avo Razafindrazaka.']}
 ]},
 {id:'speak',cat:'voix',title:'Enseigner l’anglais',sub:'Speak Up English Institute et les manuels',items:[
- {id:'speakup',logos:['speakup'],tag:'Centre de formation',title:'Speak Up English Institute',big:'Speak<br>Up',c:G('#2F8F96','#0B2545'),st:'Lancé · octobre 2026',
+ {id:'speakup',bg:'portrait.jpg',pos:'50% 28%',logos:['speakup'],tag:'Centre de formation',title:'Speak Up English Institute',big:'Speak<br>Up',c:G('#2F8F96','#0B2545'),st:'Lancé · octobre 2026',
   body:['Un centre de formation en anglais dont Stephen est le community manager. Le centre a démarré à Madagascar avec sa première rentrée en octobre 2026.','## Le format','Groupes de douze personnes au maximum, en présentiel en journée à Antananarivo ou en ligne le soir.','## Les manuels','Les manuels Let’s Speak English et Programme Anglais servent de supports.'],facts:[['12','personnes max par groupe']]},
  {id:'speakcom',logos:['speakup'],tag:'Premiers résultats',title:'La communication de Speak Up',big:'19 000',c:G('#2F8F96','#13315C'),st:'Résultats',
   body:['Premiers résultats de la communication : 19 000 vues, 509 abonnés de plus en vingt-huit jours, 95 % de taux de réponse.'],facts:[['19 000','vues'],['+509','abonnés en 28 jours'],['95 %','taux de réponse']]},
@@ -380,8 +375,8 @@ function visual(it){
     const c=it.contain?' contain':'';
     return `<figure class="vis photo${c}"><img src="img/${it.img}" alt="${it.title}"></figure>`;
   }
-  const lg=(it.logos||[]).length?`<div class="lgbox">${it.logos.map(l=>`<div class="lgt${l==='tekwin'?' dk':''}"><img src="img/logo_${l}.png" alt="logo ${l}"></div>`).join('')}</div>`:'';
-  return `<figure class="vis typo${lg?' hasl':''}" style="background:linear-gradient(155deg,${it.c[0]},${it.c[1]})"><div class="big${it.small||lg?' s':''}">${it.big}</div>${lg}<figcaption>${it.tag}</figcaption></figure>`;
+  const bg=it.bg?`background:linear-gradient(180deg,${it.c[0]}cc 0%,${it.c[0]}33 38%,${it.c[1]}f2 100%),url(img/${it.bg}) ${it.pos||'50% 30%'}/cover`:`background:linear-gradient(155deg,${it.c[0]},${it.c[1]})`;
+  return `<figure class="vis typo${it.bg?' bgp':''}" style="${bg}"><div class="big${it.small||it.bg?' s':''}">${it.big}</div><figcaption>${it.tag}</figcaption></figure>`;
 }
 function body(it){
   const parts=(it.body||[]).map(p=>p.startsWith('## ')?`<h4>${p.slice(3)}</h4>`:`<p>${p}</p>`).join('');
@@ -403,7 +398,7 @@ ROWS.forEach(r=>{
   r.items.forEach(it=>{
     n++;
     const a=document.createElement('article');a.className='art'+(n%2?'':' alt');a.id='a-'+it.id;
-    a.innerHTML=`${visual(it)}<div class="txt2">${((it.logos||[]).length&&(it.img||it.shot))?`<div class="logos">${it.logos.map(l=>`<img class="${l==='tekwin'?'dk':''}" src="img/logo_${l}.png" alt="logo ${l}">`).join('')}</div>`:''}<div class="kick">${it.tag}</div><h4 class="t">${it.title}</h4><span class="badge${it.prep?' prep':''}">${it.st}</span>${body(it)}</div>`;
+    a.innerHTML=`${visual(it)}<div class="txt2">${(it.logos||[]).length?`<div class="logos">${it.logos.map(l=>`<img class="${l==='tekwin'?'dk':''}" src="img/logo_${l}.png" alt="logo ${l}">`).join('')}</div>`:''}<div class="kick">${it.tag}</div><h4 class="t">${it.title}</h4><span class="badge${it.prep?' prep':''}">${it.st}</span>${body(it)}</div>`;
     sec.appendChild(a);
   });
   main.appendChild(sec);
