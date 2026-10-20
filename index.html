@@ -200,6 +200,7 @@ nav ul a.on{border-bottom:0;padding-bottom:0}
 @media(max-width:900px){.chaps{grid-template-columns:1fr 1fr}.chap,.chap:nth-child(1),.chap:nth-child(2){grid-column:span 1;min-height:260px}}
 @media(max-width:560px){.chaps{grid-template-columns:1fr}.chap,.chap:nth-child(1),.chap:nth-child(2){min-height:230px}}
 .tri div img{display:block;width:calc(100% + 44px);margin:-22px -22px 18px;height:190px;object-fit:cover;border-radius:7px 7px 0 0}
+.proof img{display:block;width:100%;border-radius:8px;border:1px solid rgba(255,255,255,.14);box-shadow:0 14px 34px -16px rgba(0,0,0,.7);margin-top:8px;background:#fff}
 /* bandeau Tekwin */
 .tkband{max-width:1240px;margin:50px auto 0;padding:0 4vw}
 .tkband a{display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:clamp(20px,4vw,50px);align-items:center;padding:20px;border-radius:16px;text-decoration:none;color:#fff;background:linear-gradient(120deg,var(--navy2),var(--navy));border:1px solid rgba(201,162,75,.3);transition:.3s}
@@ -337,9 +338,9 @@ const ROWS=[
   body:['En 2024-2025, Stephen passe la présidence à son successeur et reste son conseiller. En amont des réunions, ils échangent sur les activités prévues pour les six séances suivantes : il donne son avis, ses propositions et la manière dont il avait conçu et planifié les siennes.','Il gère encore aujourd’hui la page Facebook de l’association.']}
 ]},
 {id:'etudes',cat:'parcours',title:'Études & stages',sub:'De l’ISCAM à l’INSEEC',items:[
- {id:'iscam',bg:'iscam1.jpg',pos:'50% 35%',gallery:['iscam2.jpg', 'iscam3.jpg'],logos:['iscam'],tag:'Madagascar',title:'Licence en gestion',big:'ISCAM',c:G('#4E6B57','#0B2545'),st:'Terminé',
+ {id:'iscam',bg:'iscam1.jpg',pos:'50% 35%',proof:['diplome_licence.jpg'],gallery:['iscam2.jpg', 'iscam3.jpg'],logos:['iscam'],tag:'Madagascar',title:'Licence en gestion',big:'ISCAM',c:G('#4E6B57','#0B2545'),st:'Terminé',
   body:['Licence en gestion à l’ISCAM Business School, à Madagascar. C’est aussi là que se trouvent l’association et le rôle d’élève référent.','## Le diplôme','Diplôme de licence en sciences de gestion, parcours Management et Développement d’Entreprise, obtenu en 2024.','## Le rapport de fin de licence','Il s’intitule « Contribution à l’amélioration de la gestion clientèle. Cas : BOA Elite Antaninarenina ». Stephen le prépare pendant son stage de huit semaines dans cette banque.'],facts:[['3 ans','de licence'],['2024','diplôme']]},
- {id:'itti',bg:'q05.jpg',pos:'60% 25%',tag:'Anglais · juillet 2021',title:'Certificat d’anglais niveau C2',big:'C2',c:G('#13315C','#946F22'),st:'Obtenu',
+ {id:'itti',bg:'q05.jpg',pos:'60% 25%',proof:['certificat_c2.jpg'],tag:'Anglais · juillet 2021',title:'Certificat d’anglais niveau C2',big:'C2',c:G('#13315C','#946F22'),st:'Obtenu',
   body:['Le 5 juillet 2021, Stephen obtient le « Certificate of Superior Level English – C2 » de l’ITTI School of English (International TEFL Training Institute).','Le test porte sur les quatre compétences : parler, écouter, lire, écrire, avec en plus l’usage de la langue. C2 est le niveau le plus élevé du cadre européen.','Cette base nourrit tout ce qu’il fait avec l’anglais : Isc’America, Speak Up English Institute, le manuel « Let’s Speak English » et ses études en anglais à l’EBS.'],facts:[['C2','anglais'],['2021','certificat']]},
  {id:'boa',bg:'boa.jpg',pos:'50% 55%',logos:['boa'],tag:'Stage',title:'BOA Madagascar',big:'BOA',c:G('#4E6B57','#13315C'),st:'Terminé',
   body:['Stage de huit semaines à la banque BOA Elite Antaninarenina, en troisième année de licence à l’ISCAM. Il devient le rapport de fin de licence 2024, intitulé « Contribution à l’amélioration de la gestion clientèle ».','## La clientèle Elite','BOA Elite accueille une clientèle haut de gamme : cadres d’institutions, diplomates, ministres, directeurs généraux, entrepreneurs et autres personnalités. Elle attend trois choses avant tout : un service impeccable, des traitements rapides et une confidentialité totale.','## Un cas concret','Un ministre doit renouveler sa carte bancaire mais n’a pas le temps de venir. Son représentant se présente avec une procuration, qui doit normalement être légalisée. Le client exige de la souplesse, la banque doit rester dans ses règles : le rapport part de ce type de situation.','## Ce que le rapport propose','Un catalogue de solutions, évaluées puis budgétisées : des procédures plus souples pour les demandes spéciales, un personnel formé, une équipe dédiée aux clients haut de gamme, des transactions mieux sécurisées, des procurations plus simples à suivre, et des outils numériques comme un assistant en ligne.','## Au quotidien','Stephen travaille aussi aux côtés du responsable communication : il y apprend des méthodes et des raccourcis de graphisme. Le stage lui apprend aussi à écouter les clients et à rester discret.'],facts:[['8','semaines de stage'],['453','personnes interrogées'],['53','réponses au questionnaire']]}, {id:'sos',bg:'q02.jpg',pos:'50% 30%',logos:['sos'],tag:'Premier stage · 2022',title:'Groupe SOS Madagascar',big:'Groupe<br>SOS',small:1,c:G('#4E6B57','#071a33'),st:'Terminé',
@@ -486,7 +487,8 @@ function body(it){
   const facts=it.facts?`<div class="facts">${it.facts.map(f=>`<div><b>${f[0]}</b><span>${f[1]}</span></div>`).join('')}</div>`:'';
   const links=it.links?`<div class="links">${it.links.map(l=>`<a class="btn gold" target="_blank" rel="noopener" href="${l[1]}">${l[0]}</a>`).join('')}</div>`:'';
   const gal=it.gallery?`<div class="more">${it.gallery.map(g=>`<img src="img/${g}" alt="">`).join('')}</div>`:'';
-  return parts+list+facts+links+gal;
+  const proof=it.proof?`<h4>La preuve</h4><div class="proof">${it.proof.map(g=>`<img src="img/${g}" alt="Document officiel">`).join('')}</div>`:'';
+  return parts+list+facts+links+gal+proof;
 }
 function tile(it,i){
   let inner,cls='tile rv';
