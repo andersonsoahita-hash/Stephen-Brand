@@ -72,6 +72,48 @@ section.row{padding:34px 0 10px;scroll-margin-top:60px}
 .cat h2{font-family:Fraunces,serif;font-weight:600;font-size:clamp(34px,5.4vw,64px);color:#fff;line-height:1.02;margin:8px 0 6px}
 .cat p{color:var(--mut);font-size:15px}
 .sheet h4{font-family:Fraunces,serif;font-size:18px;color:var(--gold);font-weight:600;margin:18px 0 6px}
+
+#bar{position:absolute;left:0;bottom:0;height:2px;background:var(--gold);width:0}
+nav ul a.on{color:var(--gold);opacity:1;border-bottom:1px solid var(--gold);padding-bottom:3px}
+.cat{max-width:1100px;margin:0 auto;padding:110px 5vw 10px}
+.cat .intro{font-size:clamp(17px,1.6vw,20px);line-height:1.7;color:#d9dfeb;max-width:62ch;margin-top:12px}
+.part{max-width:1100px;margin:0 auto;padding:40px 5vw 10px}
+.ph{border-bottom:1px solid rgba(201,162,75,.25);padding-bottom:12px;margin-bottom:34px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.ph h3{font-family:Fraunces,serif;font-weight:600;font-size:clamp(24px,3vw,32px);color:#fff}
+.ph span{color:var(--mut);font-size:14px}
+.art{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start;margin-bottom:64px}
+.art.alt{grid-template-columns:minmax(0,1fr) minmax(0,340px)}
+.art.alt .vis{order:2}
+.art .vis{position:sticky;top:90px;margin:0;border-radius:12px;overflow:hidden;box-shadow:0 18px 40px -16px rgba(0,0,0,.7)}
+.art .vis img{display:block;width:100%;height:auto}
+.vis.typo{aspect-ratio:3/4;padding:26px;display:flex;flex-direction:column;justify-content:space-between}
+.vis.typo .big{font-family:Fraunces,serif;font-weight:600;font-size:clamp(54px,7vw,86px);line-height:.95;color:#fff;letter-spacing:-.02em}
+.vis.typo .big.s{font-size:clamp(36px,4.4vw,56px)}
+.vis.typo figcaption{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.75);font-weight:600}
+.vis.phone{border-radius:28px;border:5px solid #050f20;max-width:300px}
+.vis.phone.wide{border-radius:10px;max-width:none}
+.vis.contain{background:#FAF8F4;padding:20px}
+.txt2 .t{font-family:Fraunces,serif;font-weight:600;font-size:clamp(28px,3.6vw,42px);line-height:1.08;color:#fff;margin:6px 0 12px}
+.badge{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:99px;border:1px solid rgba(201,162,75,.55);color:var(--gold);margin-bottom:18px}
+.badge.prep{background:rgba(201,162,75,.14)}
+.txt2 p{font-size:17px;line-height:1.75;color:#e1e6f1;margin-bottom:14px;max-width:66ch}
+.txt2 h4:not(.t){font-family:Fraunces,serif;font-size:20px;color:var(--gold);font-weight:600;margin:24px 0 6px}
+.txt2 ul{margin:8px 0 16px 20px;font-size:16.5px;line-height:1.7;color:#e1e6f1}
+.txt2 li{margin-bottom:6px}
+.facts{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0}
+.facts div{flex:1 1 120px;max-width:200px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:14px 16px}
+.facts b{display:block;font-family:Fraunces,serif;font-size:32px;color:var(--gold);font-weight:600;line-height:1.1}
+.facts span{font-size:13px;color:var(--mut)}
+.more{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:20px}
+.more img{width:100%;border-radius:8px}
+@media(max-width:820px){
+ .art,.art.alt{grid-template-columns:1fr}
+ .art.alt .vis{order:0}
+ .art .vis{position:static;max-width:420px}
+ .vis.phone{max-width:260px}
+ .vis.typo{aspect-ratio:16/9}
+ .cat{padding-top:80px}
+}
 /* fil rouge */
 .thread{padding:70px 4vw 40px;text-align:center}
 .thread h2{font-family:Fraunces,serif;font-size:clamp(30px,5vw,56px);color:#fff;font-weight:600}
@@ -116,7 +158,7 @@ dialog::backdrop{background:rgba(3,10,22,.82);backdrop-filter:blur(4px)}
 </style>
 </head>
 <body>
-<nav id="nav"><a class="brand" href="#top">Stephen Anderson Soahita</a>
+<nav id="nav"><div id="bar"></div><a class="brand" href="#top">Stephen Anderson Soahita</a>
 <ul><li><a href="#cat-moi">Qui je suis</a></li><li><a href="#cat-parcours">Parcours</a></li><li><a href="#cat-creations">Créations</a></li><li><a href="#cat-voix">Voix</a></li><li><a href="#cat-group">Stephen Group</a></li><li><a href="#cat-suite">Aujourd’hui</a></li></ul></nav>
 
 <header class="hero" id="top">
@@ -126,7 +168,7 @@ dialog::backdrop{background:rgba(3,10,22,.82);backdrop-filter:blur(4px)}
 <h1>Stephen<br>Anderson<br>Soahita</h1>
 <p class="q">Grandir, ce n’est pas plaire en devenant un autre. C’est être utile en <b>restant soi.</b></p>
 <div class="words">Générosité · Entraide · Élévation</div>
-<div class="btns"><a class="btn gold" href="#cat-moi">Entrer</a><button class="btn ghost" data-open="moi">Qui je suis</button></div>
+<div class="btns"><a class="btn gold" href="#cat-moi">Entrer</a><a class="btn ghost" href="#cat-parcours">Mon parcours</a></div>
 </div>
 </header>
 
@@ -151,18 +193,18 @@ dialog::backdrop{background:rgba(3,10,22,.82);backdrop-filter:blur(4px)}
 </footer>
 <p class="small">Madagascar · Paris · Ferrières-en-Brie. Les écrans des applications sont des captures réelles ; les projets « en préparation » ne sont pas terminés.</p>
 
-<dialog id="dlg"><div class="sheet" id="sheet"></div></dialog>
+
 
 <script>
 /* ---------- données ---------- */
 const G=(a,b)=>[a,b];
 const CATS={
- moi:{k:'Chapitre 1',t:'Qui je suis',d:'Le point de départ : une personne, un fil rouge'},
- parcours:{k:'Chapitre 2',t:'Parcours',d:'Les responsabilités, les études et le terrain'},
- creations:{k:'Chapitre 3',t:'Créations',d:'Applications, livres, images : ce que je fabrique'},
- voix:{k:'Chapitre 4',t:'Voix & transmission',d:'Parler, chanter, enseigner'},
- group:{k:'Chapitre 5',t:'Stephen Group',d:'Le projet pour Madagascar, plan 2026 – 2040'},
- suite:{k:'Chapitre 6',t:'Aujourd’hui & la suite',d:'Ce que je cherche et ce qui vient'}
+ moi:{k:'Chapitre 1',t:'Qui je suis',d:'Le point de départ : une personne, un fil rouge',i:'Cette page suit un fil. Elle part de l’école et de la place que Stephen y a prise très tôt, celle de celui qui représente les autres. Elle passe par une association cofondée, un premier métier en France, des images, une voix, des livres, des applications, puis un groupe qu’il compte construire à Madagascar. Elle s’arrête sur le présent.'},
+ parcours:{k:'Chapitre 2',t:'Parcours',d:'Les responsabilités, les études et le terrain',i:'Avant les associations et les métiers, il y a l’école, et une habitude prise tôt : représenter les autres. Puis une association cofondée, deux stages à Madagascar, Paris, et un premier métier en informatique chez Tekwin.'},
+ creations:{k:'Chapitre 3',t:'Créations',d:'Applications, livres, images : ce que je fabrique',i:'Quand un besoin revient, Stephen en fait une application. Quand une idée mérite d’être transmise, il en fait un livre. Quand quelque chose est beau et que personne ne le regarde, il le photographie. Les applications sont conçues avec Claude et signées « by Stephen ».'},
+ voix:{k:'Chapitre 4',t:'Voix & transmission',d:'Parler, chanter, enseigner',i:'La prise de parole traverse tout le reste : les discours d’accueil de l’association, la présidence, ses propres textes. D’elle viennent le slam, l’art oratoire, et des manuels pour que d’autres apprennent l’anglais.'},
+ group:{k:'Chapitre 5',t:'Stephen Group',d:'Le projet pour Madagascar, plan 2026 – 2040',i:'Tout converge vers un projet plus grand : un groupe pensé pour Madagascar, dont le plan court jusqu’en 2040. Mais d’abord, l’expérience, en France.'},
+ suite:{k:'Chapitre 6',t:'Aujourd’hui & la suite',d:'Ce que je cherche et ce qui vient',i:'Un master, une alternance à trouver, des passions, et trois mots pour tenir le fil.'}
 };
 const ROWS=[
 {id:'moi',cat:'moi',title:'Commencer ici',sub:'Trois portes d’entrée',items:[
@@ -317,54 +359,56 @@ const ROWS=[
 ]}
 ];
 
-/* ---------- rendu ---------- */
-const $=s=>document.querySelector(s), IDX={};
-const main=$('#rows');let lastCat='';
+/* ---------- rendu : lecture verticale ---------- */
+const $=s=>document.querySelector(s);
+const main=$('#rows');
+let lastCat='',n=0;
+const esc=x=>x;
+function visual(it){
+  if(it.shot) return `<figure class="vis phone${it.wide?' wide':''}"><img src="img/${it.shot}" alt="${it.title}"></figure>`;
+  if(it.img){
+    const c=it.contain?' contain':'';
+    return `<figure class="vis photo${c}"><img src="img/${it.img}" alt="${it.title}"></figure>`;
+  }
+  return `<figure class="vis typo" style="background:linear-gradient(155deg,${it.c[0]},${it.c[1]})"><div class="big${it.small?' s':''}">${it.big}</div><figcaption>${it.tag}</figcaption></figure>`;
+}
+function body(it){
+  const parts=(it.body||[]).map(p=>p.startsWith('## ')?`<h4>${p.slice(3)}</h4>`:`<p>${p}</p>`).join('');
+  const list=it.list?`<ul>${it.list.map(x=>`<li>${x}</li>`).join('')}</ul>`:'';
+  const facts=it.facts?`<div class="facts">${it.facts.map(f=>`<div><b>${f[0]}</b><span>${f[1]}</span></div>`).join('')}</div>`:'';
+  const links=it.links?`<div class="links">${it.links.map(l=>`<a class="btn gold" target="_blank" rel="noopener" href="${l[1]}">${l[0]}</a>`).join('')}</div>`:'';
+  const gal=it.gallery?`<div class="more">${it.gallery.map(g=>`<img src="img/${g}" alt="">`).join('')}</div>`:'';
+  return parts+list+facts+links+gal;
+}
 ROWS.forEach(r=>{
-  if(r.cat!==lastCat){lastCat=r.cat;const c=CATS[r.cat],h=document.createElement('div');h.className='cat';h.id='cat-'+r.cat;h.innerHTML=`<div class="kick">${c.k}</div><h2>${c.t}</h2><p>${c.d}</p>`;main.appendChild(h)}
-  const sec=document.createElement('section');sec.className='row';sec.id=r.id;
-  sec.innerHTML=`<div class="rh"><h2>${r.title}</h2><span>${r.sub}</span></div><div class="rail"><button class="arr l" aria-label="Précédent">‹</button><div class="track"></div><button class="arr r" aria-label="Suivant">›</button></div>`;
-  const tr=sec.querySelector('.track');
+  if(r.cat!==lastCat){
+    lastCat=r.cat;const c=CATS[r.cat];
+    const h=document.createElement('section');h.className='cat';h.id='cat-'+r.cat;
+    h.innerHTML=`<div class="kick">${c.k}</div><h2>${c.t}</h2><p class="intro">${c.i}</p>`;
+    main.appendChild(h);
+  }
+  const sec=document.createElement('section');sec.className='part';sec.id=r.id;
+  sec.innerHTML=`<div class="ph"><h3>${r.title}</h3><span>${r.sub}</span></div>`;
   r.items.forEach(it=>{
-    IDX[it.id]=it;
-    const b=document.createElement('button');b.className='card'+(it.img?'':' typo')+(it.app?' app':'');b.dataset.open=it.id;
-    const st=`<span class="st${it.prep?' prep':''}">${it.st}</span>`;
-    if(it.img){b.innerHTML=`${st}<img loading="lazy" src="img/${it.img}" alt=""><div class="shade"></div><div class="cap"><div class="tag">${it.tag}</div><div class="ttl">${it.title}</div></div>`;if(it.contain){b.style.background='#FAF8F4';b.querySelector('img').style.objectFit='contain';b.querySelector('img').style.padding='14px 14px 90px';b.querySelector('.shade').style.background='linear-gradient(to top,rgba(7,26,51,.96) 0%,rgba(7,26,51,.0) 42%)'}}
-    else{b.style.background=`linear-gradient(155deg,${it.c[0]},${it.c[1]})`;b.innerHTML=`${st}<div class="big${it.small?' s':''}" style="margin-top:34px">${it.big}</div><div class="cap"><div class="tag">${it.tag}</div><div class="ttl">${it.title}</div></div>`}
-    tr.appendChild(b);
+    n++;
+    const a=document.createElement('article');a.className='art'+(n%2?'':' alt');a.id='a-'+it.id;
+    a.innerHTML=`${visual(it)}<div class="txt2"><div class="kick">${it.tag}</div><h4 class="t">${it.title}</h4><span class="badge${it.prep?' prep':''}">${it.st}</span>${body(it)}</div>`;
+    sec.appendChild(a);
   });
-  sec.querySelector('.arr.l').onclick=()=>tr.scrollBy({left:-tr.clientWidth*.8,behavior:'smooth'});
-  sec.querySelector('.arr.r').onclick=()=>tr.scrollBy({left:tr.clientWidth*.8,behavior:'smooth'});
   main.appendChild(sec);
 });
-/* modal */
-const dlg=$('#dlg'),sheet=$('#sheet');
-function open(id){
-  const it=IDX[id];if(!it)return;
-  let vis;
-  if(it.shot||it.img){
-    const src=it.shot||it.img;
-    vis=`<div class="vis${it.contain||it.wide?' contain':''}"><img src="img/${src}" alt="${it.title}"></div>`;
-    if(it.contain)vis=`<div class="vis contain" style="background:#FAF8F4"><img src="img/${src}" alt="${it.title}"></div>`;
-  }else vis=`<div class="vis typo" style="--c1:${it.c[0]};--c2:${it.c[1]}"><div class="big">${it.big}</div></div>`;
-  const facts=it.facts?`<div class="facts">${it.facts.map(f=>`<div><b>${f[0]}</b><span>${f[1]}</span></div>`).join('')}</div>`:'';
-  const list=it.list?`<ul>${it.list.map(x=>`<li>${x}</li>`).join('')}</ul>`:'';
-  const links=it.links&&!it.noLink?`<div class="links">${it.links.map(l=>`<a class="btn gold" target="_blank" rel="noopener" href="${l[1]}">${l[0]}</a>`).join('')}</div>`:'';
-  const gal=it.gallery?`<div class="more">${it.gallery.map(g=>`<img loading="lazy" src="img/${g}" alt="">`).join('')}</div>`:'';
-  sheet.innerHTML=`<button class="x" aria-label="Fermer">×</button>${vis}<div class="body"><div class="kick">${it.tag}</div><h3>${it.title}</h3><span class="badge">${it.st}</span>${(it.body||[]).map(p=>p.startsWith('## ')?`<h4>${p.slice(3)}</h4>`:`<p>${p}</p>`).join('')}${list}${facts}${links}${gal}</div>`;
-  sheet.querySelector('.x').onclick=()=>dlg.close();
-  sheet.scrollTop=0;
-  if(!dlg.open)dlg.showModal();
-  history.replaceState(null,'','#'+id);
+/* menu : surbrillance de la section lue + barre de progression */
+const links=[...document.querySelectorAll('nav ul a')];
+const bar=$('#bar');
+function spy(){
+  const y=scrollY+120;let cur=null;
+  document.querySelectorAll('.cat').forEach(c=>{if(c.offsetTop<=y)cur=c.id});
+  links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+cur));
+  const h=document.documentElement.scrollHeight-innerHeight;
+  bar.style.width=(h>0?Math.min(100,scrollY/h*100):0)+'%';
+  $('#nav').classList.toggle('solid',scrollY>60);
 }
-document.addEventListener('click',e=>{
-  const o=e.target.closest('[data-open]');if(o){open(o.dataset.open);return}
-  if(e.target===dlg)dlg.close();
-});
-dlg.addEventListener('click',e=>{if(!sheet.contains(e.target))dlg.close()});
-dlg.addEventListener('close',()=>history.replaceState(null,'',location.pathname));
-/* nav */
-const nav=$('#nav');addEventListener('scroll',()=>nav.classList.toggle('solid',scrollY>60),{passive:true});
+addEventListener('scroll',spy,{passive:true});spy();
 </script>
 </body>
 </html>
