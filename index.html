@@ -112,8 +112,15 @@ nav ul a.on{color:var(--gold);opacity:1;border-bottom:1px solid var(--gold);padd
  .art .vis{position:static;max-width:420px}
  .vis.phone{max-width:260px}
  .vis.typo{aspect-ratio:16/9}
+ .vis.typo.hasl{aspect-ratio:auto;min-height:0}
  .cat{padding-top:80px}
 }
+.lgbox{flex:1;display:flex;flex-direction:column;justify-content:center;gap:14px;margin:14px 0}
+.lgt{background:#fff;border-radius:12px;padding:20px 22px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px -8px rgba(0,0,0,.5)}
+.lgt.dk{background:#1E2E40}
+.lgt img{width:100%;max-height:120px;object-fit:contain;display:block}
+.vis.typo.hasl{aspect-ratio:auto;min-height:440px}
+.vis.typo.hasl .big{font-size:clamp(34px,4.2vw,52px)}
 .logos{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
 .logos img.dk{background:#1E2E40}
 .logos img{height:58px;width:auto;background:#fff;border-radius:8px;padding:6px 10px;display:block}
@@ -373,7 +380,8 @@ function visual(it){
     const c=it.contain?' contain':'';
     return `<figure class="vis photo${c}"><img src="img/${it.img}" alt="${it.title}"></figure>`;
   }
-  return `<figure class="vis typo" style="background:linear-gradient(155deg,${it.c[0]},${it.c[1]})"><div class="big${it.small?' s':''}">${it.big}</div><figcaption>${it.tag}</figcaption></figure>`;
+  const lg=(it.logos||[]).length?`<div class="lgbox">${it.logos.map(l=>`<div class="lgt${l==='tekwin'?' dk':''}"><img src="img/logo_${l}.png" alt="logo ${l}"></div>`).join('')}</div>`:'';
+  return `<figure class="vis typo${lg?' hasl':''}" style="background:linear-gradient(155deg,${it.c[0]},${it.c[1]})"><div class="big${it.small||lg?' s':''}">${it.big}</div>${lg}<figcaption>${it.tag}</figcaption></figure>`;
 }
 function body(it){
   const parts=(it.body||[]).map(p=>p.startsWith('## ')?`<h4>${p.slice(3)}</h4>`:`<p>${p}</p>`).join('');
@@ -395,7 +403,7 @@ ROWS.forEach(r=>{
   r.items.forEach(it=>{
     n++;
     const a=document.createElement('article');a.className='art'+(n%2?'':' alt');a.id='a-'+it.id;
-    a.innerHTML=`${visual(it)}<div class="txt2">${(it.logos||[]).length?`<div class="logos">${it.logos.map(l=>`<img class="${l==='tekwin'?'dk':''}" src="img/logo_${l}.png" alt="logo ${l}">`).join('')}</div>`:''}<div class="kick">${it.tag}</div><h4 class="t">${it.title}</h4><span class="badge${it.prep?' prep':''}">${it.st}</span>${body(it)}</div>`;
+    a.innerHTML=`${visual(it)}<div class="txt2">${((it.logos||[]).length&&(it.img||it.shot))?`<div class="logos">${it.logos.map(l=>`<img class="${l==='tekwin'?'dk':''}" src="img/logo_${l}.png" alt="logo ${l}">`).join('')}</div>`:''}<div class="kick">${it.tag}</div><h4 class="t">${it.title}</h4><span class="badge${it.prep?' prep':''}">${it.st}</span>${body(it)}</div>`;
     sec.appendChild(a);
   });
   main.appendChild(sec);
