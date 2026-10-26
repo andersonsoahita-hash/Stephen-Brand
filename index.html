@@ -266,6 +266,76 @@ nav ul a.on{border-bottom:0;padding-bottom:0}
 .thread{padding-top:90px}
 .tri div{transition:transform .3s,border-color .3s}.tri div:hover{transform:translateY(-6px)}
 @media(max-width:820px){.ctabs{top:52px}.pn{grid-template-columns:1fr}.apage{padding-top:100px}.apage .art .vis{position:static}}
+.sband{max-width:1240px;margin:0 auto;padding:70px 4vw 10px}
+.sband h2{font-family:Fraunces,serif;font-weight:600;font-size:clamp(28px,4vw,46px);color:#fff;margin:8px 0 22px}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.sgrid div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.09);border-top:3px solid var(--gold);border-radius:10px;padding:22px}
+.sgrid b{display:block;font-family:Fraunces,serif;font-weight:600;font-size:clamp(34px,4.4vw,52px);line-height:1.05;color:var(--gold)}
+.sgrid span{font-size:14px;color:#d6dcea}
+.snote{font-size:12.5px;color:#8b96ad;margin-top:14px}
+.snote a{color:var(--gold);text-decoration:none;font-weight:600}
+.socs{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.soc{display:flex;flex-direction:column;gap:4px;padding:22px;border-radius:12px;text-decoration:none;color:#fff;background:linear-gradient(140deg,var(--navy2),var(--navy));border:1px solid rgba(255,255,255,.09);transition:.3s}
+.soc:hover{border-color:var(--gold);transform:translateY(-4px)}
+.soc small{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.soc b{font-family:Fraunces,serif;font-size:22px;font-weight:600;line-height:1.15;word-break:break-word}
+.soc span{font-size:14px;color:#d6dcea}
+.soc i{font-style:normal;margin-top:10px;font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.avail{max-width:900px;margin:70px auto 10px;padding:38px 5vw;text-align:center;border:1px solid rgba(201,162,75,.35);border-radius:16px;background:linear-gradient(160deg,rgba(19,49,92,.75),rgba(7,26,51,.95))}
+.avail h2{font-family:Fraunces,serif;font-weight:600;font-size:clamp(30px,4.6vw,52px);color:#fff;margin:8px 0 10px}
+.avail p{color:#d9dfeb;max-width:46ch;margin:0 auto}
+.avail .btns{justify-content:center}
+footer .fchip{display:flex;flex-direction:column;gap:2px;text-decoration:none;padding:10px 16px;border-radius:8px;border:1px solid rgba(255,255,255,.12);transition:.25s}
+footer .fchip:hover{border-color:var(--gold)}
+footer .fchip b{color:#fff;font-weight:600;font-size:14px}
+footer .fchip span{font-size:12.5px;color:var(--mut)}
+/* icônes des réseaux */
+.si{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12px;flex:none;margin-bottom:8px}
+.si svg{width:22px;height:22px;display:block}
+.si-instagram{background:linear-gradient(45deg,#f9a03c 0%,#e1306c 52%,#5b51d8 100%)}
+.si-tiktok{background:#111;box-shadow:inset -2px -2px 0 #fe2c55,inset 2px 2px 0 #25f4ee}
+.si-facebook{background:#1877f2}
+.si-linkedin{background:#0a66c2}
+.btn .si{width:22px;height:22px;border-radius:7px;margin:0 8px 0 0;vertical-align:middle}
+.btn .si svg{width:13px;height:13px}
+footer .fchip{flex-direction:row;align-items:center;gap:12px}
+footer .fchip .si{margin:0;width:34px;height:34px;border-radius:10px}
+footer .fchip div{display:flex;flex-direction:column;gap:2px}
+/* logos des marques sur les vignettes */
+.tlogos_x{position:absolute;top:12px;right:12px;z-index:3;display:flex;gap:6px;max-width:70%;justify-content:flex-end}
+.tlogos_x img{height:30px;width:auto;max-width:78px;object-fit:contain;background:#fff;border-radius:7px;padding:4px 7px;display:block;box-shadow:0 4px 14px -4px rgba(0,0,0,.5)}
+.tlogos_x img.dk{background:#1E2E40}
+.tlogos_x + .bigt{top:56px}
+.tile.contain .tlogos_x{top:auto}
+/* bandeau des marques */
+.brands{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.brand{display:flex;flex-direction:column;align-items:center;gap:10px;padding:18px 12px;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);text-align:center}
+.brand img{height:54px;width:auto;max-width:140px;object-fit:contain;background:#fff;border-radius:8px;padding:6px 10px}
+.brand.dk img{background:#1E2E40}
+.brand span{font-size:12.5px;color:#d6dcea;line-height:1.3}
+/* vidéo */
+.art.hasv{grid-template-columns:1fr}
+.art.hasv .vis,.apage .art.hasv .vis{position:static;max-width:820px;width:100%}
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.tools div{padding:18px 20px;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-top:3px solid var(--gold);display:flex;flex-direction:column;gap:3px}
+.tools small{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.tools b{font-family:Fraunces,serif;font-size:19px;font-weight:600;line-height:1.2;color:#fff}
+.tools span{font-size:13.5px;color:#d6dcea}
+.art.hasv.vert .vis,.apage .art.hasv.vert .vis{max-width:380px;margin:0 auto}
+.art.hasv.vert{justify-items:center}
+.vis.video.vert video{max-height:82vh}
+/* défilement continu des logos, de droite à gauche */
+.marq{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.mtrack{display:flex;gap:14px;width:max-content;animation:marq 38s linear infinite;will-change:transform}
+.marq:hover .mtrack{animation-play-state:paused}
+.mtrack .brand{flex:none;width:176px}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 7px))}}
+@media(prefers-reduced-motion:reduce){.marq{overflow-x:auto;-webkit-mask-image:none;mask-image:none}.mtrack{animation:none}.mtrack .brand[aria-hidden]{display:none}}
+.vis.video{background:#000;border-radius:12px}
+.vis.video video{display:block;width:100%;max-height:78vh;background:#000}
+.tkband+.sband{padding-top:50px}
+.vis.video{aspect-ratio:auto}
+.art.hasv{display:block!important}.art.hasv .vis.video{width:100%;max-width:920px;margin:0 0 30px}.art.hasv.vert .vis.video{max-width:360px}.art.hasv .txt2{max-width:760px}
 </style>
 </head>
 <body>
@@ -274,7 +344,7 @@ nav ul a.on{border-bottom:0;padding-bottom:0}
 
 <div id="app"></div>
 <template id="t-hero"><header class="hero" id="top">
-<div class="photo"><img src="img/portrait_pro.jpg" alt="Portrait de Stephen Anderson Soahita"></div>
+<div class="photo"><img src="img/hero_noir.jpg" alt="Stephen Anderson Soahita, chemise noire, micro-cravate" style="object-position:50% 24%"></div>
 <div class="txt">
 <div class="kick">Site personnel · octobre 2026</div>
 <h1>Stephen<br>Anderson<br>Soahita</h1>
@@ -333,7 +403,7 @@ const ROWS=[
  {id:'isc1',bg:'isc_s1.jpg',pos:'50% 50%',logos:['iscamerica', 'iscam'],tag:'Saison 1 · 2022 – 2023',title:'Isc’America : cofonder',big:'2022',c:G('#3F6E9B','#13315C'),st:'Terminé',
   body:['Isc’America est l’association étudiante de l’ISCAM autour de la culture américaine, de la prise de parole en public et de la pratique de l’anglais. Stephen la cofonde en 2022 avec d’autres étudiants.','## Son rôle','Cofondateur et responsable communication : visuels, animation de la page, activités, premiers partenariats avec des écoles, des clubs d’anglais, des stands et des événements. C’est là qu’il découvre la communication et la création de contenu.','## Les stands','Le 26 octobre 2022, à la journée des associations, le premier stand est décoré de panneaux de villes américaines. Le 19 octobre 2023, le stand passe en intérieur avec une identité visuelle complète, un aigle peint et de la cuisine en direct. Les corn dogs sont l’idée du responsable financier pour alimenter la trésorerie ; l’aigle est une décision du comité, réalisée par des membres.']},
  {id:'isc2',bg:'isc_s2.jpg',pos:'50% 45%',gallery:['isc_s2b.jpg', 'isc_plant.jpg', 'isc_stand.jpg', 'noel_selfie.jpg', 'noel_meals.jpg'],logos:['iscamerica'],tag:'Saison 2 · 2023 – 2024',title:'Isc’America : présider',big:'2023',c:G('#3F6E9B','#0B2545'),st:'Terminé',
-  body:['En 2023, Stephen devient président.','## Thanksgiving · 23 novembre 2023','Environ vingt-cinq membres autour d’un repas partagé. Il ouvre la rencontre par un discours d’accueil sur l’idée centrale de la fête : le partage du moment et des échanges.','## Partage de repas de Noël · 23 décembre','À Ankadifotsy. L’idée du projet est la sienne et il dirige l’organisation : planning, répartition des tâches, suivi avant, pendant et après. Une collecte de fonds a lieu les 20 et 21 décembre (la part à 12 000 Ar, soit environ 2,50 €). Plus de soixante-dix personnes reçoivent un repas.','## Iscamian’s Day · janvier 2024','« Planter des vies ! » : environ quatre-vingts membres, chacun plantant au moins un arbre, et un stand de milkshakes qui récolte des fonds.','## Une soirée annulée','L’American Night Party du 23 février 2024 est préparée jusqu’au bout (autorisations, prestataires, acomptes) puis annulée à la dernière minute par l’établissement.'],facts:[['70+','repas à Noël'],['80','membres, un arbre chacun'],['25','membres à Thanksgiving']]},
+  body:['En 2023, Stephen devient président.','## Thanksgiving · 23 novembre 2023','Environ vingt-cinq membres autour d’un repas partagé. Il ouvre la rencontre par un discours d’accueil sur l’idée centrale de la fête : le partage du moment et des échanges.','## Partage de repas de Noël · 23 décembre','À Ankadifotsy. L’idée du projet est la sienne et il dirige l’organisation : planning, répartition des tâches, suivi avant, pendant et après. Une collecte de fonds a lieu les 20 et 21 décembre (la part à 12 000 Ar, soit environ 2,50 €). Plus de soixante-dix personnes reçoivent un repas.','## Iscamian’s Day · janvier 2024','« Planter des vies ! » : environ quatre-vingts membres, chacun plantant au moins un arbre, et un stand de milkshakes qui récolte des fonds.','## Une soirée annulée','L’American Night Party du 23 février 2024 est préparée jusqu’au bout (autorisations, prestataires, acomptes) puis annulée à la dernière minute par l’établissement.'],facts:[['70+','repas à Noël'],['80','membres, un arbre chacun'],['25','membres à Thanksgiving']],links:[['Partage de repas · publication 1','https://www.facebook.com/share/p/1D1qAnKpn3/'],['Partage de repas · publication 2','https://www.facebook.com/share/p/1JVsiwNnbv/']]},
  {id:'isc3',bg:'isc_s3.jpg',pos:'50% 50%',logos:['iscamerica'],tag:'Saison 3 · 2024 – 2025',title:'Isc’America : transmettre',big:'2024',c:G('#13315C','#3F6E9B'),st:'En cours',
   body:['En 2024-2025, Stephen passe la présidence à son successeur et reste son conseiller. En amont des réunions, ils échangent sur les activités prévues pour les six séances suivantes : il donne son avis, ses propositions et la manière dont il avait conçu et planifié les siennes.','Il gère encore aujourd’hui la page Facebook de l’association.']}
 ]},
@@ -356,6 +426,8 @@ const ROWS=[
 {id:'tekwin',cat:'parcours',title:'Tekwin · alternance',sub:'Assistant chef de projet IT · juillet 2025 – septembre 2026',items:[
  {id:'tk1',bg:'tk_gilet.jpg',pos:'50% 30%',gallery:['tk_fenetre.jpg'],links:[['Voir l’interview', 'https://www.instagram.com/reel/DcmEHAbxEhL/']],logos:['tekwin','accelis'],tag:'Le poste',title:'Assistant chef de projet IT',big:'Tek<br>win',c:G('#946F22','#0B2545'),st:'Terminé',
   body:['Tekwin est un prestataire de services informatiques et de cybersécurité installé à Ferrières-en-Brie, dans la H-Tech Valley, qui fait partie du groupe Accelis. Stephen y est assistant chef de projet IT, en alternance, de juillet 2025 à septembre 2026.','Au début, son trajet dure deux heures trente ; à partir de janvier, il vit à dix minutes à pied.']},
+ {id:'tkvideo',img:'tekwin_alternance.jpg',video:['tekwin_alternance.mp4','tekwin_alternance.jpg'],logos:['tekwin','accelis'],tag:'Vidéo · Tekwin',title:'Son alternance en vidéo',st:'Nouveau',
+  body:['Une vidéo sur l’alternance de Stephen chez Tekwin, où il est assistant chef de projet IT, de juillet 2025 à septembre 2026.']},
  {id:'tk2',bg:'tk_bureau.jpg',pos:'50% 35%',gallery:['tk_dell.jpg'],logos:['tekwin'],tag:'Premier défi',title:'Odoo, à partir de zéro',big:'300',c:G('#946F22','#13315C'),st:'Terminé',
   body:['Odoo vient d’être mis en place à son arrivée. Stephen devient le premier de la société à l’utiliser, sans véritable formation, en partant d’un outil vide. Il lui faut environ trois mois pour comprendre à la fois le poste et l’outil.','## La migration','Il migre environ trois cents produits depuis l’ancien logiciel, SuperOps : produits configurés selon les consignes de sa responsable, clients créés, données croisées pour les factures, abonnements créés, documentation rédigée, configuration testée.'],facts:[['300','produits migrés'],['3 mois','pour maîtriser']]},
  {id:'tk3',bg:'tk_selfie.jpg',pos:'50% 55%',logos:['tekwin'],tag:'Depuis janvier 2026',title:'Appels de courtoisie',big:'25<br>21<br>13',c:G('#2F8F96','#0B2545'),st:'En place',
@@ -368,6 +440,10 @@ const ROWS=[
 {id:'apps',cat:'creations',title:'Applications',sub:'Conçues avec Claude, signées « by Stephen »',items:[
  {id:'famille',bg:'n3.jpg',pos:'45% 50%',tag:'La famille',title:'« by Stephen »',big:'by<br>Stephen',c:G('#13315C','#C9A24B'),st:'Principe',
   body:['Les applications de Stephen forment une famille. Chacune porte la signature « by Stephen » et garde son propre nom, sa propre couleur, sa propre typographie.','Il définit les besoins, les choix et le contenu ; Claude réalise la technique. À terme, toutes appartiennent à la même famille que Stephen Group.'],list:['Kotrana : suivi sportif','Agora : art oratoire','Vola : budget personnel','Carnet de poses : photographie','VisionHub : de l’idée à l’exécution','VisionHub Suivi : suivi d’activité']},
+ {id:'portfolio',bg:'hero_noir.jpg',pos:'50% 24%',tag:'Version recruteur',title:'Stephen Portfolio',big:'Portfolio',c:G('#13315C','#071a33'),st:'En ligne',
+  body:['La version courte et directe de ce site, pensée pour les recruteurs : réalisations, expériences, formation, disponibilité et prise de rendez-vous pour un entretien.','Stephen Brand reste la référence ; Stephen Portfolio en est la vitrine professionnelle.'],links:[['Ouvrir Stephen Portfolio','https://andersonsoahita-hash.github.io/Stephen-Portfolio/']]},
+ {id:'suivialt',tag:'Suivi alternance',title:'Suivi alternance',big:'Suivi',c:G('#946F22','#0B2545'),st:'Privée',
+  body:['L’application de suivi de la recherche d’alternance : candidatures, relances et entretiens, au même endroit.','Elle est privée : l’accès demande une connexion personnelle, seul l’écran de connexion s’affiche sans elle.'],links:[['Ouvrir le suivi','https://andersonsoahita-hash.github.io/Stephen-Portfolio/suivi/']]},
  {id:'kotrana',tag:'Suivi sportif',title:'Kotrana',img:'app_kotrana.jpg',app:1,st:'En usage',
   body:['Application de suivi : séances, exercices, suivi du poids, de la taille et de la santé, avec un plan de huit semaines. « Voir clair. Tenir. »','## L’écran d’accueil','La séance du jour (ici une mobilité facultative, avec « Lancer » ou « Pas envie »), une phrase pour la journée, et un niveau avec des points d’expérience et des semaines tenues.','## Identité','Deux couleurs : un bleu marine profond et un bleu ciel en dégradé, une icône arrondie avec une lettre et un point. Elle sert de référence de style à toute la famille d’applications.','## Derrière l’application','Un plan de transformation sur six mois, cinq jours d’entraînement par semaine, un programme de cardio de vingt-quatre semaines et un tableur de suivi.'],shot:'app_kotrana.jpg'},
  {id:'agora',tag:'Art oratoire',title:'Agora',img:'app_agora.jpg',app:1,st:'En usage',
@@ -397,12 +473,18 @@ const ROWS=[
 ]},
 {id:'images',cat:'creations',title:'Photographie & vidéo',sub:'Un regard discret sur les détails du quotidien',items:[
  {id:'mits',tag:'Photographie',title:'Man in the Shadow',img:'louvre.jpg',st:'En ligne',
-  body:['Stephen photographie Paris : la rue, le portrait, la nature et le paysage. Signature : « Un regard discret sur les détails du quotidien ». L’idée : révéler ce qui est beau mais que l’on ne regarde pas, raconter une histoire ou une émotion.','## Le site','Un site public de soixante-dix-sept images en cinq chapitres, aussi disponible en application installable.'],facts:[['77','images'],['5','chapitres']],links:[['Ouvrir le site','https://andersonsoahita-hash.github.io/Man-In-The-Shadow/'],['Instagram','https://www.instagram.com/man.in_the_shadow/']],gallery:['sacre.jpg','rooftops.jpg','stairs.jpg','verticale.jpg']},
+  body:['Stephen photographie Paris : la rue, le portrait, la nature et le paysage. Signature : « Un regard discret sur les détails du quotidien ». L’idée : révéler ce qui est beau mais que l’on ne regarde pas, raconter une histoire ou une émotion.','## Le site','Un site public de soixante-dix-sept images en cinq chapitres, aussi disponible en application installable.','## L’audience','Construite avec des publications régulières sur Instagram et TikTok. Un post a touché 213 comptes (79,2 % hors abonnés) et une vidéo a réuni 1 841 vues. Ce sont des chiffres modestes, présentés tels quels.'],facts:[['77','images'],['5','chapitres'],['213','comptes touchés sur un post'],['1 841','vues sur une vidéo']],links:[['Ouvrir le site','https://andersonsoahita-hash.github.io/Man-In-The-Shadow/'],['Instagram','https://www.instagram.com/man.in_the_shadow/'],['TikTok','https://www.tiktok.com/@the.man.in.theshadow']],gallery:['sacre.jpg','rooftops.jpg','stairs.jpg','verticale.jpg']},
+ {id:'temoignage',img:'temoignage.jpg',video:['coach.mp4','temoignage.jpg'],vertical:1,tag:'Vidéo · témoignage',title:'Témoignage pour son coach d’art oratoire',st:'À la une',
+  body:['Stephen a filmé ce témoignage pour son coach d’art oratoire, qui l’accompagne actuellement pour mieux s’exprimer.','Format vertical, tourné en extérieur avec un micro-cravate.']},
+ {id:'arc',img:'arc.jpg',video:['arc.mp4','arc.jpg'],tag:'Vidéo · 36 secondes',title:'Paris, du haut de l’Arc de Triomphe',st:'Terminé',
+  body:['Une vidéo prise depuis le haut de l’Arc de Triomphe et montée par Stephen. Elle montre Paris sous un autre angle, en cinq temps.','## Les plans','Tout s’ouvre sur le titre « PARIS » et une phrase en anglais qui s’écrit sur les toits, avec la tour Eiffel au loin.','La caméra plonge ensuite vers l’avenue : les voitures, les passants sur les passages piétons, les arbres jaunes de l’automne.','À l’horizon apparaissent La Défense et la Grande Arche. Plus près, les toits de zinc et les façades haussmanniennes.','Le dernier plan suit l’avenue qui file droit vers la tour Eiffel, sous un ciel bleu.','## Le regard','Pas de visage, pas de commentaire : seulement la ville, le rythme des plans et quelques mots à l’écran.']},
+ {id:'montage',img:'montage.jpg',video:['montage.mp4','montage.jpg'],tag:'Vidéo · 35 secondes',title:'Vers l’établissement',st:'Terminé',
+  body:['Une courte vidéo où Stephen marche vers son établissement, montée sur CapCut avec des titres superposés aux images.','## Le trajet','Plan large sur le parking : sa silhouette avance vers le bâtiment en bois sombre, et le titre « STEPHEN » s’inscrit à l’image.','Casque sur les oreilles, il traverse le parking dans la lumière de fin de journée.','## Les gros plans','Ses pas, de très près : pantalon camel, baskets, pavés devant la porte vitrée. Le rythme du montage suit celui de la marche.','## L’arrivée','Le bâtiment en plan large, entre les arbres, au coucher du soleil, puis le panneau à l’entrée. Fin du trajet.']},
  {id:'matos',tag:'Matériel & méthode',title:'Sony A6400 & Photoshop',img:'verticale.jpg',st:'En usage',
   body:['Un Sony A6400 avec un objectif 18-135 mm et un 50 mm f/1.8, un trépied et un retardateur pour ses portraits. Toutes les images sont retouchées sous Photoshop.','Comptes : @man.in_the_shadow sur Instagram, @the.man.in.theshadow sur TikTok.']},
  {id:'paris',tag:'Paris',title:'La rue, la nuit, le détail',img:'sacre.jpg',st:'Série',
   body:['Le Sacré-Cœur, les toits bleus, un escalier, un reflet : Paris regardé de côté.'],gallery:['eiffel.jpg','stairs.jpg']},
- {id:'ferrieres',tag:'Film · 43 secondes',title:'Ferrières-en-Brie',img:'poster_ferrieres.jpg',st:'Terminé',
+ {id:'ferrieres',tag:'Film · 43 secondes',title:'Ferrières-en-Brie',img:'poster_ferrieres.jpg',video:['ferrieres.mp4','poster_ferrieres.jpg'],st:'Terminé',
   body:['Film personnel de quarante-trois secondes sur Ferrières-en-Brie, tourné et monté sur CapCut.']},
  {id:'court',bg:'q08.jpg',pos:'55% 60%',tag:'Court métrage · 7 min',title:'Quinze mois',big:'Quinze<br>mois',c:G('#071a33','#946F22'),st:'En préparation',prep:1,
   body:['Un court métrage de sept minutes au maximum sur ses quinze mois d’alternance, pensé pour LinkedIn. Il n’est pas encore tourné.','## Le tournage prévu','Seul, très tôt au lever du soleil, dans sa chambre de neuf mètres carrés, avec un trépied, un stabilisateur DJI et un micro.','## Le fil conducteur','Non pas « on n’est jamais là où on avait prévu d’être », mais « on est exactement là où on est censé être ; le travail, c’est de comprendre pourquoi ».']}
@@ -423,7 +505,7 @@ const ROWS=[
 ]},
 {id:'speak',cat:'voix',title:'Enseigner l’anglais',sub:'Speak Up English Institute et les manuels',items:[
  {id:'speakup',bg:'q01.jpg',pos:'50% 30%',logos:['speakup'],tag:'Centre de formation',title:'Speak Up English Institute',big:'Speak<br>Up',c:G('#2F8F96','#0B2545'),st:'Lancé · octobre 2026',
-  body:['Un centre de formation en anglais dont Stephen est le community manager. Le centre a démarré à Madagascar avec sa première rentrée en octobre 2026.','## Le format','Groupes de douze personnes au maximum, en présentiel en journée à Antananarivo ou en ligne le soir.','## Les manuels','Les manuels Let’s Speak English et Programme Anglais servent de supports.'],facts:[['12','personnes max par groupe']]},
+  body:['Un centre de formation en anglais à Antananarivo dont Stephen est le community manager : il crée et publie les contenus de la page Facebook et répond aux messages. La première rentrée a eu lieu en octobre 2026.','## Ce que disent les statistiques','Sur 28 jours, quinze contenus publiés : dix stories, trois photos et deux reels. Ils ont totalisé 19 000 vues, dont 97 % venant de personnes qui ne suivaient pas encore la page. La page a gagné 509 followers (+597 %) pour atteindre 586, et les interactions sont montées à 875 (+282 %). Tous ces chiffres viennent des statistiques de la page.','## Les messages','37 conversations en messages privés, avec un taux de réponse de 95 %.','## Le format','Groupes de douze personnes au maximum, en présentiel en journée à Antananarivo ou en ligne le soir.','## Les manuels','Les manuels Let’s Speak English et Programme Anglais servent de supports.'],facts:[['19 000','vues en 28 jours'],['97 %','vues hors abonnés'],['+509','followers (+597 %)'],['95 %','messages répondus'],['12','personnes max par groupe']]},
 ]},
 {id:'group',cat:'group',title:'Le projet',sub:'Vision, problèmes, valeurs',items:[
  {id:'sg',tag:'Building Excellence',title:'Stephen Group',img:'sg_logo.jpg',contain:1,st:'Plan juin 2026',prep:1,
@@ -469,6 +551,44 @@ const ROWS=[
 const $=s=>document.querySelector(s);
 const app=$('#app');
 const tpl=id=>$('#t-'+id).innerHTML;
+const SOCIAL={
+ email:{user:'stephen.soahita',domain:'inseec-france.com'},
+ email2:'andersonsoahita@gmail.com',   // adresse personnelle : reçoit les messages du formulaire
+ cv:'',   // chemin du CV en PDF, par ex. 'cv/CV_Stephen_Anderson_Soahita.pdf' (vide = bouton masqué)
+ links:[
+  {name:'Instagram',handle:'@man.in_the_shadow',url:'https://www.instagram.com/man.in_the_shadow/',txt:'Mes photos de rue à Paris, prises avec mon trépied.'},
+  {name:'TikTok',handle:'@the.man.in.theshadow',url:'https://www.tiktok.com/@the.man.in.theshadow',txt:'Mes photos et mes vidéos en format court.'},
+  {name:'Facebook',handle:'Page Facebook',url:'https://www.facebook.com/profile.php?id=61593415867966',txt:'Les contenus et publications de la page.'},   // vide = masqué
+  {name:'LinkedIn',handle:'Stephen Anderson Soahita',url:'https://www.linkedin.com/in/stephen-anderson-soahita-715a2b321/',txt:'Mon parcours, mes publications et la vidéo Deep Tech Talk.'}
+ ]
+};
+const STATS=[['19 000','vues en 28 jours'],['97 %','vues hors abonnés'],['+509','followers en 28 jours (+597 %)'],['95 %','des messages répondus']];
+const TOOLS=[
+ ['Photo','Sony A6400','Objectifs 18-135 mm et 50 mm f/1.8, flash Godox'],
+ ['Vidéo','iPhone 17 Pro','Stabilisateur DJI Osmo Mobile 7P, trépied'],
+ ['Son','DJI Mic Mini 2','Micro-cravate sans fil'],
+ ['Montage','CapCut','Vidéos courtes et films'],
+ ['Retouche','Photoshop','Je retouche toutes mes photos'],
+ ['Visuels','Canva','En progression'],
+ ['Réseaux','Facebook · Instagram · TikTok · LinkedIn','Publier et animer'],
+ ['Gestion','Odoo · SuperOps','Outils utilisés chez Tekwin']
+];
+const STATS_NOTE='Page Facebook de Speak Up English Institute, statistiques sur 28 jours.';
+const SV='<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">';
+const ICO={
+ Instagram:SV+'<rect x="4" y="4" width="16" height="16" rx="4.8"/><circle cx="12" cy="12" r="3.7"/><circle cx="16.8" cy="7.2" r=".9" fill="#fff" stroke="none"/></svg>',
+ TikTok:SV.replace('stroke-width="1.9"','stroke-width="2.2"')+'<path d="M13.6 4.5v9.9a3.4 3.4 0 1 1-3.4-3.4"/><path d="M13.6 4.5c.3 2.3 1.8 3.8 4.2 4.1"/></svg>',
+ Facebook:'<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M13.4 21v-7.6h2.6l.4-3h-3V8.5c0-.9.3-1.5 1.5-1.5h1.6V4.3c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.7v3h2.6V21z"/></svg>',
+ LinkedIn:SV+'<path d="M7.6 10.4V16.5M7.6 7.6v.1M11.3 16.5v-6.1M11.3 13c0-1.7 1-2.7 2.4-2.7s2.2.9 2.2 2.6v3.6"/></svg>'
+};
+function ico(n){return ICO[n]?'<span class="si si-'+n.toLowerCase()+'">'+ICO[n]+'</span>':''}
+function icoUrl(u){const m=/instagram|tiktok|facebook|linkedin/i.exec(u||'');return m?ico({instagram:'Instagram',tiktok:'TikTok',facebook:'Facebook',linkedin:'LinkedIn'}[m[0].toLowerCase()]):''}
+const BRANDS=[['speakup','Speak Up English Institute'],['tekwin','Tekwin'],['accelis','Accelis'],['iscamerica','Isc’America'],['boa','BOA Madagascar'],['sos','Groupe SOS'],['inseec','INSEEC'],['ebs','EBS Paris'],['iscam','ISCAM']];
+function tlogos(it){return (it.logos&&it.logos.length)?'<span class="tlogos">'+it.logos.map(l=>'<img loading="lazy" decoding="async" src="img/logo_'+l+'.png" alt="" class="'+(l==='tekwin'?'dk':'')+'">').join('')+'</span>':''}
+
+const FOOTCHIPS=SOCIAL.links.filter(l=>l.url).map(l=>`<a class="fchip" href="${l.url}" target="_blank" rel="noopener">${ico(l.name)}<div><b>${l.name}</b><span>${l.handle}</span></div></a>`).join('');
+const FOOT=()=>tpl('foot').replace('<footer>','<footer>'+FOOTCHIPS);
+
 const COVER={moi:['q02.jpg','50% 25%'],parcours:['iscam1.jpg','50% 20%'],creations:['q04.jpg','50% 30%'],voix:['slam_scene.jpg','50% 40%'],group:['q13.jpg','50% 25%'],suite:['q03.jpg','50% 30%']};
 const ORDER=Object.keys(CATS);
 const ITEMS={};ROWS.forEach(r=>r.items.forEach(it=>{it._row=r;it._cat=r.cat;ITEMS[it.id]=it}));
@@ -476,6 +596,7 @@ const catRows=c=>ROWS.filter(r=>r.cat===c);
 const catItems=c=>catRows(c).flatMap(r=>r.items);
 
 function visual(it){
+  if(it.video){const v=it.video;return `<figure class="vis video${it.vertical?' vert':''}"><video controls playsinline preload="metadata"${v[1]?` poster="img/${v[1]}"`:''}><source src="video/${v[0]}" type="video/mp4"></video></figure>`;}
   if(it.shot) return `<figure class="vis phone${it.wide?' wide':''}"><img src="img/${it.shot}" alt="${it.title}"></figure>`;
   if(it.img){const c=it.contain?' contain':'';return `<figure class="vis photo${c}"><img src="img/${it.img}" alt="${it.title}"></figure>`;}
   const bg=it.bg?`background:linear-gradient(180deg,${it.c[0]}cc 0%,${it.c[0]}33 38%,${it.c[1]}f2 100%),url(img/${it.bg}) ${it.pos||'50% 30%'}/cover`:`background:linear-gradient(155deg,${it.c[0]},${it.c[1]})`;
@@ -485,7 +606,7 @@ function body(it){
   const parts=(it.body||[]).map(p=>p.startsWith('## ')?`<h4>${p.slice(3)}</h4>`:`<p>${p}</p>`).join('');
   const list=it.list?`<ul>${it.list.map(x=>`<li>${x}</li>`).join('')}</ul>`:'';
   const facts=it.facts?`<div class="facts">${it.facts.map(f=>`<div><b>${f[0]}</b><span>${f[1]}</span></div>`).join('')}</div>`:'';
-  const links=it.links?`<div class="links">${it.links.map(l=>`<a class="btn gold" target="_blank" rel="noopener" href="${l[1]}">${l[0]}</a>`).join('')}</div>`:'';
+  const links=it.links?`<div class="links">${it.links.map(l=>`<a class="btn gold" target="_blank" rel="noopener" href="${l[1]}">${icoUrl(l[1])}${l[0]}</a>`).join('')}</div>`:'';
   const gal=it.gallery?`<div class="more">${it.gallery.map(g=>`<img src="img/${g}" alt="">`).join('')}</div>`:'';
   const proof=it.proof?`<h4>La preuve</h4><div class="proof">${it.proof.map(g=>`<img src="img/${g}" alt="Document officiel">`).join('')}</div>`:'';
   return parts+list+facts+links+gal+proof;
@@ -503,19 +624,28 @@ function nextChap(c){
   const nx=ORDER[(ORDER.indexOf(c)+1)%ORDER.length];const d=CATS[nx];
   return `<div class="nextch rv"><a href="#/c/${nx}"><div><small>${d.k} · suite</small><b>${d.t}</b></div><span class="ar">→</span></a></div>`;
 }
+
+function HOMEBANDS(){
+  const stats=`<section class="sband rv"><div class="kick">En chiffres</div><h2>Ce que son travail a donné en 28 jours</h2><div class="sgrid">${STATS.map(s=>`<div><b>${s[0]}</b><span>${s[1]}</span></div>`).join('')}</div><p class="snote">${STATS_NOTE} <a href="#/c/creations/speakup">Voir le détail →</a></p></section>`;
+  const soc=SOCIAL.links.filter(l=>l.url).map(l=>`<a class="soc" href="${l.url}" target="_blank" rel="noopener">${ico(l.name)}<small>${l.name}</small><b>${l.handle}</b><span>${l.txt}</span><i>Ouvrir →</i></a>`).join('');
+  const socials=`<section class="sband rv"><div class="kick">Les comptes</div><h2>Ce qu’il publie</h2><div class="socs">${soc}</div></section>`;
+  const brands=`<section class="sband rv"><div class="kick">Parcours</div><h2>Là où il a travaillé et étudié</h2><div class="marq" aria-label="Sociétés et écoles"><div class="mtrack">${[0,1].map(k=>BRANDS.map(b=>`<div class="brand${b[0]==='tekwin'?' dk':''}"${k?' aria-hidden="true"':''}><img loading="lazy" decoding="async" src="img/logo_${b[0]}.png" alt="${k?'':b[1]}"><span>${b[1]}</span></div>`).join('')).join('')}</div></div></section>`;
+  return stats+socials+brands;
+}
 function home(){
   const chaps=ORDER.map((c,i)=>{const d=CATS[c],cv=COVER[c];
     return `<a class="chap rv" style="--d:${i*.08}s" href="#/c/${c}"><img src="img/${cv[0]}" style="object-position:${cv[1]}" alt=""><div class="in"><div class="num">${d.k}</div><h3>${d.t}</h3><p>${d.d}</p><span class="go">Entrer →</span></div></a>`}).join('');
   app.innerHTML=`<div class="page">${tpl('hero').replace('</header>','<div class="scrollhint">Découvrir</div></header>').replace('href="#cat-moi"','href="#/c/moi"').replace('href="#cat-parcours"','href="#/c/parcours"')}
   <section class="homechap"><div class="kick rv">Six chapitres</div><h2 class="rv">Choisis ta porte d’entrée</h2><div class="chaps">${chaps}</div></section>
   <section class="tkband rv"><a href="#/c/parcours/tk1"><img src="img/tk_gilet.jpg" alt=""><div><div class="kick">Alternance · juillet 2025 – septembre 2026</div><h3>Mon alternance chez Tekwin</h3><p>Assistant chef de projet IT : Odoo, appels de courtoisie, passation, LinkedIn.</p><span class="go">Découvrir →</span></div></a></section>
-  ${tpl('thread')}${tpl('foot')}</div>`;
+  ${HOMEBANDS()}
+  ${tpl('thread')}${FOOT()}</div>`;
 }
 function chapter(c){
   const d=CATS[c],cv=COVER[c],rows=catRows(c);
   const tabs=rows.length>1?`<div class="ctabs">${rows.map(r=>`<a href="#/c/${c}" data-sec="${r.id}">${r.title}</a>`).join('')}</div>`:'';
   const secs=rows.map(r=>`<section class="csec" id="s-${r.id}"><div class="ph rv"><h3>${r.title}</h3><span>${r.sub}</span></div><div class="grid">${r.items.map(tile).join('')}</div></section>`).join('');
-  app.innerHTML=`<div class="page"><header class="chead"><img src="img/${cv[0]}" style="object-position:${cv[1]}" alt=""><div class="wrap"><div class="crumbs"><a href="#/">Accueil</a> · ${d.k}</div><div class="kick">${d.k}</div><h1>${d.t}</h1><p class="intro">${d.i}</p></div></header>${tabs}<div class="cbody">${secs}</div>${nextChap(c)}${tpl('foot')}</div>`;
+  app.innerHTML=`<div class="page"><header class="chead"><img src="img/${cv[0]}" style="object-position:${cv[1]}" alt=""><div class="wrap"><div class="crumbs"><a href="#/">Accueil</a> · ${d.k}</div><div class="kick">${d.k}</div><h1>${d.t}</h1><p class="intro">${d.i}</p></div></header>${tabs}<div class="cbody">${secs}</div>${nextChap(c)}${FOOT()}</div>`;
   document.querySelectorAll('.ctabs a').forEach(a=>a.onclick=e=>{e.preventDefault();const t=$('#s-'+a.dataset.sec);scrollTo({top:t.getBoundingClientRect().top+scrollY-110,behavior:'smooth'})});
 }
 function article(id){
@@ -524,8 +654,8 @@ function article(id){
   const logos=(it.logos||[]).length?`<div class="logos">${it.logos.map(l=>`<img class="${l==='tekwin'?'dk':''}" src="img/logo_${l}.png" alt="logo ${l}">`).join('')}</div>`:'';
   const pn=x=>x?`<a class="${x===nx?'nx':'pv'}" href="#/c/${c}/${x.id}"><small>${x===nx?'Suivant →':'← Précédent'}</small><b>${x.title}</b></a>`:`<a class="ph0"></a>`;
   app.innerHTML=`<div class="page"><div class="apage"><a class="backbtn" href="#/c/${c}">← ${CATS[c].t}</a><div class="crumbs"><a href="#/">Accueil</a> · <a href="#/c/${c}">${CATS[c].t}</a> · ${it._row.title}</div>
-  <article class="art" id="a-${it.id}">${visual(it)}<div class="txt2">${logos}<div class="kick">${it.tag}</div><h4 class="t">${it.title}</h4><span class="badge${it.prep?' prep':''}">${it.st}</span>${body(it)}</div></article></div>
-  <div class="pn">${pn(pv)}${pn(nx)}</div>${nextChap(c)}${tpl('foot')}</div>`;
+  <article class="art${it.video?' hasv'+(it.vertical?' vert':''):''}" id="a-${it.id}">${visual(it)}<div class="txt2">${logos}<div class="kick">${it.tag}</div><h4 class="t">${it.title}</h4><span class="badge${it.prep?' prep':''}">${it.st}</span>${body(it)}</div></article></div>
+  <div class="pn">${pn(pv)}${pn(nx)}</div>${nextChap(c)}${FOOT()}</div>`;
 }
 let io;
 function reveal(){
