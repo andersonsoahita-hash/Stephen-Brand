@@ -336,6 +336,9 @@ footer .fchip div{display:flex;flex-direction:column;gap:2px}
 .tkband+.sband{padding-top:50px}
 .vis.video{aspect-ratio:auto}
 .art.hasv{display:block!important}.art.hasv .vis.video{width:100%;max-width:920px;margin:0 0 30px}.art.hasv.vert .vis.video{max-width:360px}.art.hasv .txt2{max-width:760px}
+.tile.vid:before{content:"";position:absolute;left:50%;top:44%;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:rgba(7,26,51,.62) url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Cpath fill=%27%23C9A24B%27 d=%27M9 6.5v11l9-5.5z%27/%3E%3C/svg%3E") center/32px no-repeat;border:1px solid rgba(201,162,75,.7);z-index:3;pointer-events:none}
+.vband{max-width:1240px;margin:0 auto;padding:60px 4vw 0}.vband .grid{margin-top:8px}
+.avail .btns{justify-content:center}
 </style>
 </head>
 <body>
@@ -363,12 +366,8 @@ footer .fchip div{display:flex;flex-direction:column;gap:2px}
 </div>
 <p class="quote">Grandir, ce n’est pas plaire en devenant un autre. C’est être utile en <b>restant soi.</b></p>
 </section></template>
-<template id="t-foot"><footer>
-<a class="qr" href="https://www.linkedin.com/in/stephen-anderson-soahita-715a2b321/" target="_blank" rel="noopener"><img src="img/qr_linkedin.png" alt="QR LinkedIn"><span><b>LinkedIn</b>Stephen Anderson Soahita</span></a>
-<a class="qr" href="https://andersonsoahita-hash.github.io/Man-In-The-Shadow/" target="_blank" rel="noopener"><img src="img/qr_mits.png" alt="QR Man in the Shadow"><span><b>Man in the Shadow</b>Le site photo</span></a>
-<a class="qr" href="https://www.instagram.com/man.in_the_shadow/" target="_blank" rel="noopener"><img src="img/qr_insta.png" alt="QR Instagram"><span><b>Instagram</b>@man.in_the_shadow</span></a>
-</footer>
-<p class="small">Madagascar · Paris · Ferrières-en-Brie. Les écrans des applications sont des captures réelles ; les projets « en préparation » ne sont pas terminés.</p></template>
+<template id="t-foot"><footer></footer>
+<p class="small">Madagascar · Paris · Ferrières-en-Brie. Les chiffres viennent des statistiques des pages concernées ; les projets « en préparation » ne sont pas terminés.</p></template>
 <noscript><p style="padding:120px 4vw">Ce site nécessite JavaScript.</p></noscript>
 
 
@@ -442,8 +441,6 @@ const ROWS=[
   body:['Les applications de Stephen forment une famille. Chacune porte la signature « by Stephen » et garde son propre nom, sa propre couleur, sa propre typographie.','Il définit les besoins, les choix et le contenu ; Claude réalise la technique. À terme, toutes appartiennent à la même famille que Stephen Group.'],list:['Kotrana : suivi sportif','Agora : art oratoire','Vola : budget personnel','Carnet de poses : photographie','VisionHub : de l’idée à l’exécution','VisionHub Suivi : suivi d’activité']},
  {id:'portfolio',bg:'hero_noir.jpg',pos:'50% 24%',tag:'Version recruteur',title:'Stephen Portfolio',big:'Portfolio',c:G('#13315C','#071a33'),st:'En ligne',
   body:['La version courte et directe de ce site, pensée pour les recruteurs : réalisations, expériences, formation, disponibilité et prise de rendez-vous pour un entretien.','Stephen Brand reste la référence ; Stephen Portfolio en est la vitrine professionnelle.'],links:[['Ouvrir Stephen Portfolio','https://andersonsoahita-hash.github.io/Stephen-Portfolio/']]},
- {id:'suivialt',tag:'Suivi alternance',title:'Suivi alternance',big:'Suivi',c:G('#946F22','#0B2545'),st:'Privée',
-  body:['L’application de suivi de la recherche d’alternance : candidatures, relances et entretiens, au même endroit.','Elle est privée : l’accès demande une connexion personnelle, seul l’écran de connexion s’affiche sans elle.'],links:[['Ouvrir le suivi','https://andersonsoahita-hash.github.io/Stephen-Portfolio/suivi/']]},
  {id:'kotrana',tag:'Suivi sportif',title:'Kotrana',img:'app_kotrana.jpg',app:1,st:'En usage',
   body:['Application de suivi : séances, exercices, suivi du poids, de la taille et de la santé, avec un plan de huit semaines. « Voir clair. Tenir. »','## L’écran d’accueil','La séance du jour (ici une mobilité facultative, avec « Lancer » ou « Pas envie »), une phrase pour la journée, et un niveau avec des points d’expérience et des semaines tenues.','## Identité','Deux couleurs : un bleu marine profond et un bleu ciel en dégradé, une icône arrondie avec une lettre et un point. Elle sert de référence de style à toute la famille d’applications.','## Derrière l’application','Un plan de transformation sur six mois, cinq jours d’entraînement par semaine, un programme de cardio de vingt-quatre semaines et un tableur de suivi.'],shot:'app_kotrana.jpg'},
  {id:'agora',tag:'Art oratoire',title:'Agora',img:'app_agora.jpg',app:1,st:'En usage',
@@ -474,20 +471,22 @@ const ROWS=[
 {id:'images',cat:'creations',title:'Photographie & vidéo',sub:'Un regard discret sur les détails du quotidien',items:[
  {id:'mits',tag:'Photographie',title:'Man in the Shadow',img:'louvre.jpg',st:'En ligne',
   body:['Stephen photographie Paris : la rue, le portrait, la nature et le paysage. Signature : « Un regard discret sur les détails du quotidien ». L’idée : révéler ce qui est beau mais que l’on ne regarde pas, raconter une histoire ou une émotion.','## Le site','Un site public de soixante-dix-sept images en cinq chapitres, aussi disponible en application installable.','## L’audience','Construite avec des publications régulières sur Instagram et TikTok. Un post a touché 213 comptes (79,2 % hors abonnés) et une vidéo a réuni 1 841 vues. Ce sont des chiffres modestes, présentés tels quels.'],facts:[['77','images'],['5','chapitres'],['213','comptes touchés sur un post'],['1 841','vues sur une vidéo']],links:[['Ouvrir le site','https://andersonsoahita-hash.github.io/Man-In-The-Shadow/'],['Instagram','https://www.instagram.com/man.in_the_shadow/'],['TikTok','https://www.tiktok.com/@the.man.in.theshadow']],gallery:['sacre.jpg','rooftops.jpg','stairs.jpg','verticale.jpg']},
+ {id:'matos',tag:'Matériel & méthode',title:'Sony A6400 & Photoshop',img:'verticale.jpg',st:'En usage',
+  body:['Un Sony A6400 avec un objectif 18-135 mm et un 50 mm f/1.8, un trépied et un retardateur pour ses portraits. Toutes les images sont retouchées sous Photoshop.','Comptes : @man.in_the_shadow sur Instagram, @the.man.in.theshadow sur TikTok.']},
+ {id:'paris',tag:'Paris',title:'La rue, la nuit, le détail',img:'sacre.jpg',st:'Série',
+  body:['Le Sacré-Cœur, les toits bleus, un escalier, un reflet : Paris regardé de côté.'],gallery:['eiffel.jpg','stairs.jpg']},
+ {id:'court',bg:'q08.jpg',pos:'55% 60%',tag:'Court métrage · 7 min',title:'Quinze mois',big:'Quinze<br>mois',c:G('#071a33','#946F22'),st:'En préparation',prep:1,
+  body:['Un court métrage de sept minutes au maximum sur ses quinze mois d’alternance, pensé pour LinkedIn. Il n’est pas encore tourné.','## Le tournage prévu','Seul, très tôt au lever du soleil, dans sa chambre de neuf mètres carrés, avec un trépied, un stabilisateur DJI et un micro.','## Le fil conducteur','Non pas « on n’est jamais là où on avait prévu d’être », mais « on est exactement là où on est censé être ; le travail, c’est de comprendre pourquoi ».']}
+]},
+{id:'video',cat:'creations',title:'Ce qu’il tourne et monte',sub:'Caméra, trépied et montage : tout est fait par lui',items:[
  {id:'temoignage',img:'temoignage.jpg',video:['coach.mp4','temoignage.jpg'],vertical:1,tag:'Vidéo · témoignage',title:'Témoignage pour son coach d’art oratoire',st:'À la une',
   body:['Stephen a filmé ce témoignage pour son coach d’art oratoire, qui l’accompagne actuellement pour mieux s’exprimer.','Format vertical, tourné en extérieur avec un micro-cravate.']},
  {id:'arc',img:'arc.jpg',video:['arc.mp4','arc.jpg'],tag:'Vidéo · 36 secondes',title:'Paris, du haut de l’Arc de Triomphe',st:'Terminé',
   body:['Une vidéo prise depuis le haut de l’Arc de Triomphe et montée par Stephen. Elle montre Paris sous un autre angle, en cinq temps.','## Les plans','Tout s’ouvre sur le titre « PARIS » et une phrase en anglais qui s’écrit sur les toits, avec la tour Eiffel au loin.','La caméra plonge ensuite vers l’avenue : les voitures, les passants sur les passages piétons, les arbres jaunes de l’automne.','À l’horizon apparaissent La Défense et la Grande Arche. Plus près, les toits de zinc et les façades haussmanniennes.','Le dernier plan suit l’avenue qui file droit vers la tour Eiffel, sous un ciel bleu.','## Le regard','Pas de visage, pas de commentaire : seulement la ville, le rythme des plans et quelques mots à l’écran.']},
  {id:'montage',img:'montage.jpg',video:['montage.mp4','montage.jpg'],tag:'Vidéo · 35 secondes',title:'Vers l’établissement',st:'Terminé',
   body:['Une courte vidéo où Stephen marche vers son établissement, montée sur CapCut avec des titres superposés aux images.','## Le trajet','Plan large sur le parking : sa silhouette avance vers le bâtiment en bois sombre, et le titre « STEPHEN » s’inscrit à l’image.','Casque sur les oreilles, il traverse le parking dans la lumière de fin de journée.','## Les gros plans','Ses pas, de très près : pantalon camel, baskets, pavés devant la porte vitrée. Le rythme du montage suit celui de la marche.','## L’arrivée','Le bâtiment en plan large, entre les arbres, au coucher du soleil, puis le panneau à l’entrée. Fin du trajet.']},
- {id:'matos',tag:'Matériel & méthode',title:'Sony A6400 & Photoshop',img:'verticale.jpg',st:'En usage',
-  body:['Un Sony A6400 avec un objectif 18-135 mm et un 50 mm f/1.8, un trépied et un retardateur pour ses portraits. Toutes les images sont retouchées sous Photoshop.','Comptes : @man.in_the_shadow sur Instagram, @the.man.in.theshadow sur TikTok.']},
- {id:'paris',tag:'Paris',title:'La rue, la nuit, le détail',img:'sacre.jpg',st:'Série',
-  body:['Le Sacré-Cœur, les toits bleus, un escalier, un reflet : Paris regardé de côté.'],gallery:['eiffel.jpg','stairs.jpg']},
  {id:'ferrieres',tag:'Film · 43 secondes',title:'Ferrières-en-Brie',img:'poster_ferrieres.jpg',video:['ferrieres.mp4','poster_ferrieres.jpg'],st:'Terminé',
   body:['Film personnel de quarante-trois secondes sur Ferrières-en-Brie, tourné et monté sur CapCut.']},
- {id:'court',bg:'q08.jpg',pos:'55% 60%',tag:'Court métrage · 7 min',title:'Quinze mois',big:'Quinze<br>mois',c:G('#071a33','#946F22'),st:'En préparation',prep:1,
-  body:['Un court métrage de sept minutes au maximum sur ses quinze mois d’alternance, pensé pour LinkedIn. Il n’est pas encore tourné.','## Le tournage prévu','Seul, très tôt au lever du soleil, dans sa chambre de neuf mètres carrés, avec un trépied, un stabilisateur DJI et un micro.','## Le fil conducteur','Non pas « on n’est jamais là où on avait prévu d’être », mais « on est exactement là où on est censé être ; le travail, c’est de comprendre pourquoi ».']}
 ]},
 {id:'marques',cat:'creations',title:'Marques & activités',sub:'Mettre une image sur des projets réels',items:[
  {id:'baume',tag:'Identité de marque',title:'Baume Anjara-Soa',img:'j3.jpg',st:'En vente',
@@ -587,7 +586,8 @@ const BRANDS=[['speakup','Speak Up English Institute'],['tekwin','Tekwin'],['acc
 function tlogos(it){return (it.logos&&it.logos.length)?'<span class="tlogos">'+it.logos.map(l=>'<img loading="lazy" decoding="async" src="img/logo_'+l+'.png" alt="" class="'+(l==='tekwin'?'dk':'')+'">').join('')+'</span>':''}
 
 const FOOTCHIPS=SOCIAL.links.filter(l=>l.url).map(l=>`<a class="fchip" href="${l.url}" target="_blank" rel="noopener">${ico(l.name)}<div><b>${l.name}</b><span>${l.handle}</span></div></a>`).join('');
-const FOOT=()=>tpl('foot').replace('<footer>','<footer>'+FOOTCHIPS);
+const FOOTEXTRA=`<a class="fchip" href="https://andersonsoahita-hash.github.io/Man-In-The-Shadow/" target="_blank" rel="noopener"><div><b>Man in the Shadow</b><span>Le site photo</span></div></a><a class="fchip" href="https://andersonsoahita-hash.github.io/Stephen-Portfolio/" target="_blank" rel="noopener"><div><b>Stephen Portfolio</b><span>Version recruteur</span></div></a><a class="fchip" href="mailto:${SOCIAL.email2}"><div><b>E-mail</b><span>${SOCIAL.email2}</span></div></a>`;
+const FOOT=()=>tpl('foot').replace('<footer>','<footer>'+FOOTCHIPS+FOOTEXTRA);
 
 const COVER={moi:['q02.jpg','50% 25%'],parcours:['iscam1.jpg','50% 20%'],creations:['q04.jpg','50% 30%'],voix:['slam_scene.jpg','50% 40%'],group:['q13.jpg','50% 25%'],suite:['q03.jpg','50% 30%']};
 const ORDER=Object.keys(CATS);
@@ -612,7 +612,7 @@ function body(it){
   return parts+list+facts+links+gal+proof;
 }
 function tile(it,i){
-  let inner,cls='tile rv';
+  let inner,cls='tile rv'+(it.video?' vid':'');
   if(it.shot){cls+=' phoneT';inner=`<div class="bgi"><img src="img/${it.shot}" alt=""></div>`}
   else if(it.img){if(it.contain)cls+=' contain';inner=`<div class="bgi"><img src="img/${it.img}" alt=""></div>`}
   else if(it.bg){inner=`<div class="bgi" style="background-image:url(img/${it.bg});background-position:${it.pos||'50% 30%'}"></div>`}
@@ -625,12 +625,20 @@ function nextChap(c){
   return `<div class="nextch rv"><a href="#/c/${nx}"><div><small>${d.k} · suite</small><b>${d.t}</b></div><span class="ar">→</span></a></div>`;
 }
 
+
+function HOMEMORE(){
+  const vids=['temoignage','tkvideo','ferrieres','arc','montage','tk5'].map(id=>ITEMS[id]).filter(Boolean);
+  const v=`<section class="vband"><div class="kick rv">Réalisations</div><h2 class="rv" style="font-family:Fraunces,serif;font-weight:600;font-size:clamp(28px,4vw,46px);color:#fff;margin:8px 0 8px">Ce qu’il tourne et monte</h2><p class="rv" style="color:#d6dcea;max-width:62ch;margin-bottom:22px">Caméra, trépied et montage : un témoignage, un film sur Ferrières-en-Brie, Paris vu du haut de l’Arc de Triomphe, une vidéo sur son alternance, une autre pour le Deep Tech Talk. Tout est tourné et monté par lui.</p><div class="grid">${vids.map(tile).join('')}</div></section>`;
+  const tools=`<section class="sband rv"><div class="kick">Équipement</div><h2>Avec quoi il travaille</h2><div class="tools">${TOOLS.map(t=>`<div><small>${t[0]}</small><b>${t[1]}</b><span>${t[2]}</span></div>`).join('')}</div></section>`;
+  const avail=`<section class="avail" id="contact"><div class="kick">Disponibilité</div><h2>À la recherche d’une alternance de deux ans</h2><p>Une semaine à l’école, trois semaines en entreprise, à Paris et en Île-de-France. Disponible immédiatement.</p><div class="btns"><a class="btn gold" target="_blank" rel="noopener" href="https://andersonsoahita-hash.github.io/Stephen-Portfolio/#/contact">Proposer un entretien</a><a class="btn ghost" target="_blank" rel="noopener" href="https://andersonsoahita-hash.github.io/Stephen-Portfolio/">Version recruteur</a></div></section>`;
+  return [v,tools,avail];
+}
 function HOMEBANDS(){
   const stats=`<section class="sband rv"><div class="kick">En chiffres</div><h2>Ce que son travail a donné en 28 jours</h2><div class="sgrid">${STATS.map(s=>`<div><b>${s[0]}</b><span>${s[1]}</span></div>`).join('')}</div><p class="snote">${STATS_NOTE} <a href="#/c/creations/speakup">Voir le détail →</a></p></section>`;
   const soc=SOCIAL.links.filter(l=>l.url).map(l=>`<a class="soc" href="${l.url}" target="_blank" rel="noopener">${ico(l.name)}<small>${l.name}</small><b>${l.handle}</b><span>${l.txt}</span><i>Ouvrir →</i></a>`).join('');
   const socials=`<section class="sband rv"><div class="kick">Les comptes</div><h2>Ce qu’il publie</h2><div class="socs">${soc}</div></section>`;
   const brands=`<section class="sband rv"><div class="kick">Parcours</div><h2>Là où il a travaillé et étudié</h2><div class="marq" aria-label="Sociétés et écoles"><div class="mtrack">${[0,1].map(k=>BRANDS.map(b=>`<div class="brand${b[0]==='tekwin'?' dk':''}"${k?' aria-hidden="true"':''}><img loading="lazy" decoding="async" src="img/logo_${b[0]}.png" alt="${k?'':b[1]}"><span>${b[1]}</span></div>`).join('')).join('')}</div></div></section>`;
-  return stats+socials+brands;
+  const m=HOMEMORE();return stats+socials+m[0]+m[1]+brands+m[2];
 }
 function home(){
   const chaps=ORDER.map((c,i)=>{const d=CATS[c],cv=COVER[c];
